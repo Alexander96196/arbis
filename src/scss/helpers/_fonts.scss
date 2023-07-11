@@ -1,0 +1,24 @@
+@font-face {
+  @include includeFont(300, $first-font, "Roboto-Light");
+}
+
+@font-face {
+  @include includeFont(400, $first-font, "Roboto-Regular");
+}
+
+@font-face {
+  @include includeFont(500, $first-font, "Roboto-Medium");
+}
+
+@font-face {
+  @include includeFont(700, $first-font, "Roboto-Bold");
+}
+
+@font-face {
+  @include includeFont(400, $second-font, "GothamPro-Regular");
+}
+
+@font-face {
+  @include includeFont(700, $second-font, "Roboto-Bold");
+}
+

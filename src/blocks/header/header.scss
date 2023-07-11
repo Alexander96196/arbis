@@ -1,0 +1,131 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  min-height: 86px;
+  background: linear-gradient(180deg, #ffffff 10%, rgba(255, 255, 255, 0) 100%);
+
+  &--active {
+    background-color: #ffffff;
+  }
+
+  &--active .header__box {
+    transform: inherit;
+    transition: all 0.3s;
+  }
+
+  &--active .header__toggle {
+    & .burger__inner {
+      display: none;
+    }
+
+    &::before,
+    &::after {
+      top: 50%;
+      background-color: #292d5287;
+      transform: translateY(-50%);
+      transition: all 0.3s;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.header__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.header__logo {
+  position: relative;
+  z-index: 110;
+}
+
+.header__logo-img {
+  width: 115px;
+}
+
+.header__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 110;
+  margin-left: auto;
+}
+
+.header__box {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 27px;
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  transform: translateY(-120%);
+  transition: all 0.3s;
+}
+
+.header__nav {
+  margin-bottom: 70px;
+}
+
+.header__button {
+  height: 53px;
+  margin: 0 20px;
+}
+
+@media (min-width: 1200px) {
+  .header {
+    z-index: 110;
+    background: unset;
+  }
+
+  .header__wrap {
+    @include page-wrapper;
+    padding-top: 30px;
+  }
+
+  .header__toggle {
+    display: none;
+  }
+
+  .header__box {
+    position: static;
+    width: inherit;
+    margin-left: auto;
+    padding: 0;
+    background-color: transparent;
+    transform: inherit;
+  }
+
+  .header__inner {
+    display: flex;
+    padding: 0;
+    border: none;
+  }
+
+  .header__nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .header__button {
+    width: 205px;
+    height: 50px;
+    margin: 0;
+    margin-left: 85px;
+  }
+}
