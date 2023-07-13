@@ -1,0 +1,153 @@
+.accordion__header {
+  position: relative;
+  font-family: $second-font;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 13.5px;
+  color: #2e55a2;
+  padding: 18px 47px 18px 23px;
+  margin-bottom: 30px;
+  border-radius: 4.486px;
+  background: #fff;
+  box-shadow: 0px 0px 3.5px 2.5px #eef8fd;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 11px;
+    right: 26px;
+    background-image: url("../../img/icons/svg/accordion-arrow.svg");
+  }
+}
+
+.accordion__content {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #3a3f52;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &--copy {
+    line-height: 17px;
+    color: #fff;
+
+    & span {
+      color: #49b1e6;
+    }
+  }
+}
+
+.accordion__item {
+  margin-bottom: 30px;
+}
+
+.accordion__content-list {
+  @include list-reset;
+  display: grid;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.accordion__content-item {
+  position: relative;
+  height: 111px;
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 12px;
+  padding: 34px 18px 41px 106px;
+  border-radius: 4.5px;
+  background: #fff;
+  box-shadow: 0px 0px 8.918930053710938px 4.954960823059082px #eff8fd,
+    0px 0px 0px 1.9819843769073486px #edf7fc;
+
+  &--connection {
+    height: inherit;
+    box-shadow: none;
+  }
+
+  &--setting {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 34px;
+      height: 34px;
+      left: 34px;
+      background-image: url("../../img/icons/svg/setting.svg");
+      background-repeat: no-repeat;
+    }
+  }
+  &--install {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 34px;
+      height: 34px;
+      left: 34px;
+      background-image: url("../../img/icons/svg/install.svg");
+      background-repeat: no-repeat;
+    }
+  }
+  &--debug {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 34px;
+      height: 34px;
+      left: 34px;
+      background-image: url("../../img/icons/svg/debug.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.accordion__panel {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .accordion__header {
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  .accordion__content {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .accordion__content-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .accordion__content-item {
+    padding: 99px 26px 78px 26px;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+
+    &--setting {
+      &::before {
+        left: 95px;
+        top: 33px;
+      }
+    }
+
+    &--install {
+      &::before {
+        left: 95px;
+        top: 33px;
+      }
+    }
+    &--debug {
+      &::before {
+        left: 95px;
+        top: 33px;
+      }
+    }
+  }
+}

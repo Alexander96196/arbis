@@ -1,0 +1,60 @@
+table {
+width: 100%;
+}
+
+tr {
+  font-size: 8px;
+  color: #033460;
+}
+
+td {
+  padding: 12px 5px 12px 13px;
+}
+
+.table__grey {
+  background-color: #f6f6f6;
+}
+
+.table__light-blue {
+  background-color: #009ee2;
+  color: #fff;
+  text-align: center;
+}
+
+.table__blue {
+  background-color: #2e55a2;
+  color: #fff;
+  text-align: center;
+}
+
+.table__dark-blue {
+  background-color: #033460;
+  color: #fff;
+  padding: 12px 6px;
+  text-align: center;
+}
+
+.table__light-grey {
+  background-color: #edf7fc;
+  font-weight: 400;
+  padding: 9px 60px;
+
+  &--bold {
+    font-weight: 500;
+    padding: 20px 8px 22px 13px;
+  }
+}
+
+.table__second {
+  width: 60px;
+  height: 33px;
+  text-align: center;
+}
+
+.tariff__table {
+    margin-bottom:  36px;
+}
+
+.tariff__title {
+  margin-bottom: 20px;
+}

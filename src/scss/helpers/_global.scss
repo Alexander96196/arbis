@@ -1,6 +1,7 @@
 body {
   font-weight: 400;
   font-family: $first-font, sans-serif;
+  font-size: 14px;
 }
 
 * {
@@ -32,4 +33,22 @@ a {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+.title {
+  font-family: $second-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #2e55a2;
+} 
+
+.text {
+  color: #3a3f52; 
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
 }

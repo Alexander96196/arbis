@@ -26,6 +26,13 @@
   }
 
   &--blue {
+    font-size: 11px;
+    line-height: 15px;
+    padding: 14px 39px;
+    margin: 0 37px;
+    background-color: #0293dc;
+    border-radius: 4px;
+
     &:hover {
       background: #169cdf;
     }
