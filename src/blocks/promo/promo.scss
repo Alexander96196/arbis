@@ -1,0 +1,259 @@
+.promo {
+  position: relative;
+  width: 100%;
+  height: 547px;
+  padding: 58px 27px 0 27px;
+  background-image: url("../../img/promo-bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.promo__image {
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 30px #87e7ea);
+}
+
+.promo__content {
+  font-family: $second-font;
+  color: #fff;
+  margin-bottom: 34px;
+}
+
+.promo__title {
+  width: 266px;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 auto 27px auto;
+  text-transform: uppercase;
+
+  & span {
+    font-weight: 400;
+    text-transform: none;
+  }
+}
+
+.promo__price {
+  position: relative;
+  width: 266px;
+  font-size: 19px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+  text-transform: lowercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 1px;
+    top: 10px;
+    left: 29px;
+    background-color: #fff;
+  }
+
+  & span {
+    margin-left: 33px;
+    margin-right: 11px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 105px;
+      height: 24px;
+      bottom: 0;
+      left: 33px;
+      background-image: url("../../img/icons/svg/rectangle.svg");
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      top: 5px;
+      left: 37px;
+      background-image: url("../../img/icons/svg/ellipse.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.promo__button {
+  width: 238px;
+  height: 44px;
+  font-size: 12px;
+  margin: 0 auto;
+  border-radius: 4px;
+  background: #0293dc;
+}
+
+@media (min-width: 768px) {
+  .promo {
+    height: 410px;
+    padding: 93px 57px 0 57px;
+    background-image: url("../../img/promo-bg-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .promo__wrapper {
+    display: flex;
+  }
+
+  .promo__title {
+    width: 366px;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .promo__price {
+    width: 366px;
+    font-size: 23px;
+    margin: 0 0 42px 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 1px;
+      top: 10px;
+      left: 34px;
+    }
+
+    & span {
+      margin-left: 41px;
+      margin-right: 11px;
+
+      &::before {
+        content: "";
+        width: 130px;
+        height: 30px;
+        left: 40px;
+        background-image: url("../../img/icons/svg/rectangle-tablet.svg");
+      }
+
+      &::after {
+        content: "";
+        width: 13px;
+        height: 13px;
+        top: 5px;
+        left: 45px;
+        background-image: url("../../img/icons/svg/ellipse-tablet.svg");
+      }
+    }
+  }
+
+  .promo__button {
+    width: 310px;
+    font-size: 15px;
+    height: 57px;
+    margin: 0;
+  }
+
+  .promo__image-man {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+
+  .promo__image {
+    filter: drop-shadow(0 -40px 45px #87e7ea);
+  }
+}
+
+@media (min-width: 1200px) {
+  .promo {
+    height: 678px;
+    padding-top: 145px;
+    background-image: url("../../img/promo-bg-desk.jpg");
+  }
+
+  .promo__wrapper {
+    padding-right: calc(50% - 490px);
+    padding-left: calc(50% - 490px);
+  }
+
+  .promo__title {
+    width: 610px;
+    font-size: 60px;
+    margin-bottom: 92px;
+  }
+
+  .promo__price {
+    width: 610px;
+    font-size: 40px;
+    margin-bottom: 110px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 32px;
+      height: 2px;
+      top: 17px;
+      left: 56px;
+    }
+
+    & span {
+      margin-left: 75px;
+      margin-right: 24px;
+
+      &::before {
+        content: "";
+        width: 234px;
+        height: 55px;
+        left: 66px;
+        background-image: url("../../img/icons/svg/rectangle-desk.svg");
+      }
+
+      &::after {
+        content: "";
+        width: 22px;
+        height: 22px;
+        top: 8px;
+        left: 75px;
+        background-image: url("../../img/icons/svg/ellipse-desk.svg");
+      }
+    }
+  }
+
+  .promo__image-man {
+    position: inherit;
+    margin-top: -97px;
+  }
+
+  .promo__image {
+    filter: drop-shadow(0 -58px 79px #87e7ea);
+  }
+}
+
+@media (min-width: 1920px) {
+  .promo__wrapper {
+    padding-right: calc(50% - 590px);
+    padding-left: calc(50% - 590px);
+  }
+
+  .promo__title {
+    width: 670px;
+    font-size: 65px;
+  }
+
+  .promo__price {
+    font-size: 43px;
+
+    &::before {
+      top: 20px;
+    }
+
+    & span {
+      margin-left: 65px;
+
+      &::after {
+        top: 11px;
+      }
+    }
+  }
+}

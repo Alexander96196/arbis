@@ -1,0 +1,45 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $second-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 6px 11px;
+  background-color: #fd5b4b;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  appearance: none;
+
+  &:hover {
+    background-color: #eb4b44;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+
+  &--blue {
+    &:hover {
+      background: #169cdf;
+    }
+  }
+}
+
+@media (min-width: 760px) {
+  .button {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .button {
+    font-size: 14px;
+  }
+}

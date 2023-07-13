@@ -19,8 +19,8 @@
   <header class="header">
     <div class="header__wrapper">
       <div class="header__logo-container">
-        <a class="header__logo logo" href="index.html"></a>
-        <img class="header__logo-img" src="../img/header-logo.png" alt="Логотип арбис">
+        <a class="header__logo logo" href="index.html">
+          <img class="header__logo-img" src="../img/header-logo.png" alt="Логотип арбис">
         </a>
       </div>
       <div class="header__tagline">
@@ -35,7 +35,10 @@
         <div class="header__tel">
           <a href="tel:+78182603196" class="header__tel"><span class="code">(8182)</span> 60-31-96</a>
         </div>
-      </div>     
+      </div>
+      <div class="nav__button nav__button-desktop">
+        <a class="header__button header__button-desk button" href="#">Заказать обратный звонок</a>
+      </div>
       <div class="header__burger">
         <button class="header__toggle burger">
           <span class="burger__inner"><span class="visually-hidden">Открыть меню</span></span>
@@ -43,35 +46,57 @@
         <div class="header__box">
           <div class="header__inner">
             <nav class="header__nav nav">
-              <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="#">О компании</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Программы</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Центр сопровождения</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Центр внедрения</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Безопасность</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Решения</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+              <ul class="nav__list">
+                <li class="nav__item nav__item--arrow"><a class="nav__link" href="active.html">О компании</a></li>
+                <li class="nav__item nav__item--arrow"><a class="nav__link" href="#">Программы</a></li>
+                <li class="nav__item nav__item--arrow"><a class="nav__link" href="#">Центр сопровождения</a></li>
+                <li class="nav__item nav__item--arrow"><a class="nav__link" href="#">Центр внедрения</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Безопасность</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Решения</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Новости</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
               </ul>
             </nav>
-            <button class="header__button-burger button" href="#">Заказать обратный звонок</button>
+            <div class="nav__button nav__button-burger">
+              <a class="header__button button" href="#">Заказать обратный звонок</a>
+            </div>
             <div class="header__contact header__contact-burger">
-              <div class="header__email-burger">
+              <div class="header__email header__email-burger">
                 <a href="mailto:office@arbis29.ru" class="header__email-burger">office@arbis29.ru</a>
               </div>
-              <div class="header__tel-burger">
-                <a href="tel:+78182603196" class="header__tel-burger"><span class="code">(8182)</span> 60-31-96</a>
+              <div class="header__tel header__tel-burger">
+                <a href="tel:+78182603196" class="header__tel-burger"><span>(8182)</span> 60-35-75</a>
               </div>
-            </div>     
+            </div>
           </div>
         </div>
       </div>
     </div>
   </header>
   <main class="main">
+    <section class="promo">
+      <h1 class="visually-hidden">Промо баннер</h1>
+      <div class="promo__wrapper">
+        <div class="promo__content">
+          <p class="promo__title">IT-сопровождение<span> для баз 1С</span></p>
+          <p class="promo__price">От <span>10 000</span> руб. в месяц</p>
+          <a class="promo__button button button--blue" href="#">Получить консультацию</a>
+        </div>
+        <div class="promo__image-man">
+          <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="img/man-desk.webp">
+          <source media="(min-width: 1200px)" srcset="img/man-desk.jpg">
+          <source media="(min-width: 768px)" type="image/webp" srcset="img/man-tablet.webp">
+          <source media="(min-width: 768px)" srcset="img/man-tablet.jpg">
+            <source type="image/webp" srcset="../img/man-mobile.webp">
+            <img class="promo__image" src="../img/man-mobile.png" alt="">
+          </picture>
+        </div>
+      </div>
+    </section>
 
   </main>
-
+  <footer></footer>
   <script src="js/general.js"></script>
 </body>
 
