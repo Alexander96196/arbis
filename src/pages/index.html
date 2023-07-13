@@ -78,23 +78,44 @@
       <h1 class="visually-hidden">Промо баннер</h1>
       <div class="promo__wrapper">
         <div class="promo__content">
-          <p class="promo__title">IT-сопровождение<span> для баз 1С</span></p>
+          <h1 class="promo__title">IT-сопровождение<span> для баз 1С</span></h1>
           <p class="promo__price">От <span>10 000</span> руб. в месяц</p>
           <a class="promo__button button button--blue" href="#">Получить консультацию</a>
         </div>
         <div class="promo__image-man">
           <picture>
             <source media="(min-width: 1200px)" type="image/webp" srcset="img/man-desk.webp">
-          <source media="(min-width: 1200px)" srcset="img/man-desk.jpg">
-          <source media="(min-width: 768px)" type="image/webp" srcset="img/man-tablet.webp">
-          <source media="(min-width: 768px)" srcset="img/man-tablet.jpg">
+            <source media="(min-width: 1200px)" srcset="img/man-desk.jpg">
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/man-tablet.webp">
+            <source media="(min-width: 768px)" srcset="img/man-tablet.jpg">
             <source type="image/webp" srcset="../img/man-mobile.webp">
             <img class="promo__image" src="../img/man-mobile.png" alt="">
           </picture>
         </div>
       </div>
     </section>
-
+    <section class="advantages">
+      <h1 class="visually-hidden">Преимущества</h1>
+      <div class="advantages__wrapper">
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <p class="advantages__title">99,5%<br>времени</p>
+            <p class="advantages__desk">Гарантированная доступность поддерживаемого ПО</p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__title advantages__title--only">365 <br><span class="advantages__subtitle">резервных копий в год</span></p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__title">1 час</p>
+            <p class="advantages__desk">Время реакции группы поддержки на критическую проблему в вашей конфигурации</p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__title">0,8</p>
+            <p class="advantages__desk">Минимальный уровень производительности поддерживаемого ПО по шкале APDEX</p>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
   <footer></footer>
   <script src="js/general.js"></script>
