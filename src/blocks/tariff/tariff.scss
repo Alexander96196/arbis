@@ -1,5 +1,5 @@
 table {
-width: 100%;
+  width: 100%;
 }
 
 tr {
@@ -52,9 +52,56 @@ td {
 }
 
 .tariff__table {
-    margin-bottom:  36px;
+  margin-bottom: 36px;
 }
 
 .tariff__title {
   margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  tr {
+    font-size: 16px;
+  }
+
+  .table__light-grey {
+    padding: 17px 130px;
+    &--bold {
+      width: 194px;
+      padding: 40px;
+    }
+  }
+
+  .table__first {
+    padding: 32px 40px;
+  }
+
+  .table__second {
+    width: inherit;
+    padding: 23px 40px;
+  }
+
+  .table__light-blue,
+  .table__blue,
+  .table__dark-blue {
+    padding: 23px 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  tr {
+    font-size: 18px;
+  }
+
+  .table__first {
+    padding: 9px 100px;
+  }
+
+  .table__second {
+    padding: 9px 74px;
+  }
+
+  .table__light-grey--bold {
+    width: inherit;
+  }
 }

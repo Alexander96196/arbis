@@ -1,0 +1,48 @@
+.clients {
+  padding: 0 27px;
+}
+
+.clients__title {
+  margin-bottom: 18px;
+}
+
+.clients__img {
+  width: 82px;
+  height: 64px;
+  border-radius: 5px;
+  background: #d9d9d9;
+}
+
+@media (min-width: 768px) {
+  .clients {
+    padding: 0 59px;
+  }
+
+  .clients__slider {
+    padding: 0 56px;
+  }
+
+  .clients__img {
+    width: 194px;
+    height: 127px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients {
+    padding-right: calc(50% - 490px);
+    padding-left: calc(50% - 490px);
+  }
+
+  .clients__img {
+    width: 198px;
+    height: 127px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .clients {
+    padding-right: calc(50% - 590px);
+    padding-left: calc(50% - 590px);
+  }
+}

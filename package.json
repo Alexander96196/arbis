@@ -68,5 +68,8 @@
     "src/img/**/*.svg",
     "src/blocks/**/*.scss"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.7.0",
+    "swiper": "^10.0.4"
+  }
 }

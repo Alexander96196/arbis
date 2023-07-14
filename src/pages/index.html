@@ -13,6 +13,7 @@
   <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" crossorigin>
   <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" crossorigin>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body class="page">
@@ -175,25 +176,20 @@
           <div class="accordion__item">
             <div class="accordion__header">1. Аудит инфраструктуры: оборудования и программных решений</div>
             <div class="accordion__panel">
-              <div class="accordion__content text">Прежде чем заключить договор о сопровождении и мониторинге,
-                специалисты
-                АРБИС
-                проводят аудит инфраструктуры – услуга может быть качественно оказана только при её достаточном
-                техническом уровне.
+              <div class="accordion__content text">
+                <p class="accordion__content text">Прежде чем заключить договор о сопровождении и мониторинге,
+                  специалисты АРБИС проводят аудит инфраструктуры – услуга может быть качественно оказана только при её
+                  достаточном техническом уровне.</p>
                 <p class="accordion__content text">Аудит позволяет определиться с тем, может ли услуга быть оказана
-                  сразу,
-                  либо
-                  после приведения
-                  инфраструктуры к необходимым требованиям. Для этого может потребоваться оснащение серверов заказчика
-                  альтернативными каналами связи, дополнительным оборудованием и программным обеспечением.
+                  сразу, либо после приведения инфраструктуры к необходимым требованиям. Для этого может потребоваться
+                  оснащение серверов заказчика альтернативными каналами связи, дополнительным оборудованием и
+                  программным обеспечением.
                 </p>
                 <p class="accordion__content text">Аудит – самостоятельная услуга. Стоимость аудита оплачивается только
-                  в
-                  том
-                  случае, если клиент прибегает
-                  к решению проблем, выявленных в процессе аудита, посредством специалистов АРБИС. Проведение аудита не
-                  гарантирует дальнейшего обслуживания по стандартам услуги «Сопровождение и мониторинг инфраструктуры»,
-                  если заказчик по итогам аудита не приведёт свою инфраструктуру к минимальным требованиям.
+                  в том случае, если клиент прибегает к решению проблем, выявленных в процессе аудита, посредством
+                  специалистов АРБИС. Проведение аудита не гарантирует дальнейшего обслуживания по стандартам услуги
+                  «Сопровождение и мониторинг инфраструктуры», если заказчик по итогам аудита не приведёт свою
+                  инфраструктуру к минимальным требованиям.
                 </p>
                 <div class="services__offer services__offer-accordion">
                   <h3 class="services__offer-title">Для гарантированного качества оказания услуги клиентам также часто
@@ -236,13 +232,15 @@
               <div class="accordion__content">
                 <ul class="accordion__content-list">
                   <li class="accordion__content-item accordion__content-item--setting">
-                    Дополнительная настройка, переустановка или обновление поддерживаемого ПО 
+                    <p class="accordion__text text"> Дополнительная настройка, переустановка или обновление
+                      поддерживаемого ПО </p>
                   </li>
                   <li class="accordion__content-item accordion__content-item--install">
-                    Установка систем удалённого мониторирования и управления серверами по защищенному каналу VPN
+                    <p class="accordion__text text"> Установка систем удалённого мониторирования и управления серверами
+                      по защищенному каналу VPN</p>
                   </li>
                   <li class="accordion__content-item accordion__content-item--debug">
-                    Исправление проблем информационных баз
+                    <p class="accordion__text text"> Исправление проблем информационных баз</p>
                   </li>
                 </ul>
                 <p class="accordion__content-text text">Эта услуга оплачивается отдельно, на неё заключается свой
@@ -282,12 +280,12 @@
                 </p>
                 <div class="services__offer-image services__offer-image--accordion">
                   <picture>
-                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/gear-desc.webp">
-                    <source media="(min-width: 1200px)" srcset="img/gear-desc.jpg">
-                    <source media="(min-width: 768px)" type="image/webp" srcset="img/gear-tablet.webp">
-                    <source media="(min-width: 768px)" srcset="img/gear-tablet.jpg">
-                    <source type="image/webp" srcset="../img/laptop1.webp">
-                    <img class="services__image" src="../img/laptop1.png" alt="">
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/laptop-desc.webp">
+                    <source media="(min-width: 1200px)" srcset="img/laptop-desc.jpg">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/laptop-tablet.webp">
+                    <source media="(min-width: 768px)" srcset="img/laptop-tablet.jpg">
+                    <source type="image/webp" srcset="../img/laptop-mobile.webp">
+                    <img class="services__image" src="../img/laptop-mobile.png" alt="">
                   </picture>
                 </div>
               </div>
@@ -428,7 +426,7 @@
             <p class="services__security-text">Это позволяет подключаться к базам с любых компьютеров, на которых
               установлена легально приобретённая и зарегистрированная программа «1С».</p>
           </div>
-          <div class="services__security-block">
+          <div class="services__security-block services__security-block-second">
             <p class="services__security-text">При необходимости АРБИС настроит виртуальную частную сеть (VPN).</p>
             <p class="services__security-text">В таком случае доступ к базам можно будет получить только с заранее
               настроенных рабочих машин (компьютеров), а остальные попытки подключения невозможны.</p>
@@ -443,13 +441,14 @@
             <div class="accordion__header">1. Аудит программной инфраструктуры</div>
             <div class="accordion__panel">
               <div class="accordion__content">
-                <ul class="accordion__content-list">
+                <ul class="accordion__content-list accordion__content-list--connection">
                   <li class="accordion__content-item accordion__content-item--connection services__price-item--audit">
                     Специалисты АРБИС оценят здоровье программных компонентов: актуальность версий, соответствие версий
                     серверного ПО друг другу, скорость работы информационных баз, выявят ошибки. В ходе аудита будут
                     учтены технологии, с помощью которых функционируют программы, объём и количество информационных баз,
                     пригодность программной инфраструктуры клиента к переносу в центр обработки и хранения данных в
-                    АРБИС.</li>
+                    АРБИС.
+                  </li>
               </div>
             </div>
           </div>
@@ -457,12 +456,13 @@
             <div class="accordion__header">2. Исправление выявленных ошибок</div>
             <div class="accordion__panel">
               <div class="accordion__content">
-                <ul class="accordion__content-list">
+                <ul class="accordion__content-list accordion__content-list--connection">
                   <li class="accordion__content-item accordion__content-item--connection services__price-item--fix">
                     В случае, если в процессе аудита инженеры обнаружат ошибки в работе вашего ПО, то перед переносом
                     данных на серверные мощности АРБИС выявленные ошибки и причины их возникновения должны быть
                     устранены. Исправить проблемы заказчик может самостоятельно, либо воспользоваться соответствующим
-                    сервисом специалистов АРБИС.</li>
+                    сервисом специалистов АРБИС.
+                  </li>
               </div>
             </div>
           </div>
@@ -470,12 +470,13 @@
             <div class="accordion__header">3. Перенос данных</div>
             <div class="accordion__panel">
               <div class="accordion__content">
-                <ul class="accordion__content-list">
+                <ul class="accordion__content-list accordion__content-list--connection">
                   <li
                     class="accordion__content-item accordion__content-item--connection services__price-item--transfer">
                     После устранения ошибок в работе ПО заказчика информационные базы и серверное ПО могут быть
                     перенесены на виртуальный выделенный сервер, работающий на мощностях АРБИС. Обычно перенос не
-                    отнимает много времени и проходит незаметно для пользователей.</li>
+                    отнимает много времени и проходит незаметно для пользователей.
+                  </li>
               </div>
             </div>
           </div>
@@ -483,28 +484,31 @@
             <div class="accordion__header">4. Мониторинг и сопровождение</div>
             <div class="accordion__panel">
               <div class="accordion__content">
-                <ul class="accordion__content-list">
+                <ul class="accordion__content-list accordion__content-list--connection">
                   <li
                     class="accordion__content-item accordion__content-item--connection services__price-item--monitoring">
                     ПО клиента, работающее на серверах АРБИС, попадает в систему мониторинга. Это позволяет
                     предотвращать или оперативно устранять возникающие ошибки. Доступа к пользовательским данным
-                    (содержанию информационных баз) система мониторинга не имеет.</li>
+                    (содержанию информационных баз) система мониторинга не имеет.
+                  </li>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="services__reliability">
-        <h2 class="services__reliability-title title">Надежность</h2>
+        <h2 class="services__reliability-title title">Надёжность</h2>
         <div class="services__reliability-wrapper">
           <div class="services__reliability-block">
-            <p class="services__reliability-text services__reliability-text--bold"> Аппаратная инфраструктура защищена технологией кластеризации.</p>
+            <p class="services__reliability-text services__reliability-text--bold"> Аппаратная инфраструктура защищена
+              технологией кластеризации.</p>
             <p class="services__reliability-text">Если один из компонентов выходит из строя, поддержкой ваших баз
               занимаются другие.</p>
             <p class="services__reliability-text">Переключение происходит незаметно для вас в автоматическом режиме.</p>
           </div>
           <div class="services__reliability-block">
-            <p class="services__reliability-text services__reliability-text--bold">Резервные копии ваших баз также хранятся на серверах с использованием
+            <p class="services__reliability-text services__reliability-text--bold">Резервные копии ваших баз также
+              хранятся на серверах с использованием
               этой технологии.</p>
             <p class="services__reliability-text">Кроме того, в зашифрованном виде бэкапы могут загружаться на внешние
               серверы.</p>
@@ -532,19 +536,21 @@
         </ul>
       </div>
       <div class="services__application">
-        <div class="services__application-image">
-          <picture>
-            <source media="(min-width: 1200px)" type="image/webp" srcset="img/woman-desc.webp">
-            <source media="(min-width: 1200px)" srcset="img/woman-desc.jpg">
-            <source media="(min-width: 768px)" type="image/webp" srcset="img/woman-tablet.webp">
-            <source media="(min-width: 768px)" srcset="img/woman-tablet.jpg">
-            <source type="image/webp" srcset="../img/woman-mobile.webp">
-            <img class="services__application-img" src="../img/woman-mobile.png" alt="">
-          </picture>
-        </div>
-        <div class="services__application-block">
-          <p class="services__application-text">Остались вопросы?<br>Готовы помочь!</p>
-          <a href="#" class="services__application-button button button--blue">Оставить заявку</a>
+        <div class="services__application-wrapper">
+          <div class="services__application-image">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/woman-desc.webp">
+              <source media="(min-width: 1200px)" srcset="img/woman-desc.jpg">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/woman-tablet.webp">
+              <source media="(min-width: 768px)" srcset="img/woman-tablet.jpg">
+              <source type="image/webp" srcset="../img/woman-mobile.webp">
+              <img class="services__application-img" src="../img/woman-mobile.png" alt="">
+            </picture>
+          </div>
+          <div class="services__application-block">
+            <p class="services__application-text">Остались вопросы?<br>Готовы помочь!</p>
+            <a href="#" class="services__application-button button button--blue">Оставить заявку</a>
+          </div>
         </div>
       </div>
       <div class="services__extra">
@@ -562,6 +568,301 @@
           <li class="services__extra-item"><a href="#" class="services__extra-link">Настройка обмена данными с 1С</a>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="reviews">
+      <h2 class="reviews__title title">Отзывы</h2>
+      <div class="reviews__slider swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="reviews__container-slide">
+              <div class="reviews__block-company">
+                <div class="reviews__photo">
+                  <img src="" alt="" class="reviews__img">
+                  <div class="reviews__employee reviews__employee-desc">
+                    <p class="reviews__surname">Имя Фамилия</p>
+                    <p class="reviews__job">Должность</p>
+                  </div>
+                </div>
+                <div class="reviews__name">
+                  <p class="reviews__company">Название компании</p>
+                  <p class="reviews__implementation">Внедрение «1С:Документооборот»</p>
+                  <p class="reviews__text reviews__text-desc">Применение «1С:Документооборот» позволило в 10 раз
+                    сократить сроки
+                    согласования договоров и полностью исключило утрату документов в процессе ежедневной работы.</p>
+                </div>
+              </div>
+              <div class="reviews__block-desc">
+                <div class="reviews__desc">
+                  <p class="reviews__text reviews__text-mobile">Применение «1С:Документооборот» позволило в 10 раз
+                    сократить сроки
+                    согласования договоров и полностью исключило утрату документов в процессе ежедневной работы.</p>
+                </div>
+                <div class="reviews__employee reviews__employee-mobile">
+                  <p class="reviews__surname">Имя Фамилия</p>
+                  <p class="reviews__job">Должность</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="reviews__container-slide">
+              <div class="reviews__block-company">
+                <div class="reviews__photo">
+                  <img src="" alt="" class="reviews__img">
+                  <div class="reviews__employee reviews__employee-desc">
+                    <p class="reviews__surname">Имя Фамилия</p>
+                    <p class="reviews__job">Должность</p>
+                  </div>
+                </div>
+                <div class="reviews__name">
+                  <p class="reviews__company">Название компании</p>
+                  <p class="reviews__implementation">Внедрение «1С:Документооборот»</p>
+                  <p class="reviews__text reviews__text-desc">Применение «1С:Документооборот» позволило в 10 раз
+                    сократить сроки
+                    согласования договоров и полностью исключило утрату документов в процессе ежедневной работы.</p>
+                </div>
+              </div>
+              <div class="reviews__block-desc">
+                <div class="reviews__desc">
+                  <p class="reviews__text reviews__text-mobile">Применение «1С:Документооборот» позволило в 10 раз
+                    сократить сроки
+                    согласования договоров и полностью исключило утрату документов в процессе ежедневной работы.</p>
+                </div>
+                <div class="reviews__employee reviews__employee-mobile">
+                  <p class="reviews__surname">Имя Фамилия</p>
+                  <p class="reviews__job">Должность</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="reviews__container-slide">
+              <div class="reviews__block-company">
+                <div class="reviews__photo">
+                  <img src="" alt="" class="reviews__img">
+                  <div class="reviews__employee reviews__employee-desc">
+                    <p class="reviews__surname">Имя Фамилия</p>
+                    <p class="reviews__job">Должность</p>
+                  </div>
+                </div>
+                <div class="reviews__name">
+                  <p class="reviews__company">Название компании</p>
+                  <p class="reviews__implementation">Внедрение «1С:Документооборот»</p>
+                  <p class="reviews__text reviews__text-desc">Применение «1С:Документооборот» позволило в 10 раз
+                    сократить сроки
+                    согласования договоров и полностью исключило утрату документов в процессе ежедневной работы.</p>
+                </div>
+              </div>
+              <div class="reviews__block-desc">
+                <div class="reviews__desc">
+                  <p class="reviews__text reviews__text-mobile">Применение «1С:Документооборот» позволило в 10 раз
+                    сократить сроки
+                    согласования договоров и полностью исключило утрату документов в процессе ежедневной работы.</p>
+                </div>
+                <div class="reviews__employee reviews__employee-mobile">
+                  <p class="reviews__surname">Имя Фамилия</p>
+                  <p class="reviews__job">Должность</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section class="clients">
+      <h2 class="clients__title title">Клиенты</h2>
+      <div class="clients__slider swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="clients__slider-image">
+              <img src="" alt="" class="clients__img">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="clients__slider-image">
+              <img src="" alt="" class="clients__img">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="clients__slider-image">
+              <img src="" alt="" class="clients__img">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="clients__slider-image">
+              <img src="" alt="" class="clients__img">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="clients__slider-image">
+              <img src="" alt="" class="clients__img">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="clients__slider-image">
+              <img src="" alt="" class="clients__img">
+            </div>
+          </div>
+        </div>
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      </div>
+    </section>
+    <section class="articles">
+      <h2 class="articles__title title">Статьи</h2>
+      <div class="articles__slider swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="articles__slider-image">
+              <div class="articles__slider-wrapper">
+                <article>
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/article-desc.webp">
+                    <source media="(min-width: 1200px)" srcset="img/article-desc.jpg">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/article-tablet.webp">
+                    <source media="(min-width: 768px)" srcset="img/article-tablet.jpg">
+                    <source type="image/webp" srcset="../img/article-mobile.webp">
+                    <img class="article__image" src="../img/article-mobile.png" alt="">
+                  </picture>
+                  <div class="article__content">
+                    <p class="articles__date">01.01.2001</p>
+                    <h1 class="articles__head">Чем рискует бизнес при утечках данных, и как этого не допустить?</h1>
+                    <p class="articles__text">Слышали, как какая-то компания допустила утечку персональных данных тысяч
+                      пользователей? Кто их только не допускал! Но, что грозит за утечки тем, кто хранит данные; что
+                      попадает в такие сливы; и как всё это предотвратить, проговорим сегодня.</p>
+                    <a href="" class="articles__link">Подробнее</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="articles__slider-image">
+              <div class="articles__slider-wrapper">
+                <article>
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/article-desc.webp">
+                    <source media="(min-width: 1200px)" srcset="img/article-desc.jpg">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/article-tablet.webp">
+                    <source media="(min-width: 768px)" srcset="img/article-tablet.jpg">
+                    <source type="image/webp" srcset="../img/article-mobile.webp">
+                    <img class="article__image" src="../img/article-mobile.png" alt="">
+                  </picture>
+                  <div class="article__content">
+                    <p class="articles__date">01.01.2001</p>
+                    <h1 class="articles__head">Чем рискует бизнес при утечках данных, и как этого не допустить?</h1>
+                    <p class="articles__text">Слышали, как какая-то компания допустила утечку персональных данных тысяч
+                      пользователей? Кто их только не допускал! Но, что грозит за утечки тем, кто хранит данные; что
+                      попадает в такие сливы; и как всё это предотвратить, проговорим сегодня.</p>
+                    <a href="" class="articles__link">Подробнее</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+             <div class="articles__slider-image">
+              <div class="articles__slider-wrapper">
+                <article>
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/article-desc.webp">
+                    <source media="(min-width: 1200px)" srcset="img/article-desc.jpg">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/article-tablet.webp">
+                    <source media="(min-width: 768px)" srcset="img/article-tablet.jpg">
+                    <source type="image/webp" srcset="../img/article-mobile.webp">
+                    <img class="article__image" src="../img/article-mobile.png" alt="">
+                  </picture>
+                  <div class="article__content">
+                    <p class="articles__date">01.01.2001</p>
+                    <h1 class="articles__head">Чем рискует бизнес при утечках данных, и как этого не допустить?</h1>
+                    <p class="articles__text">Слышали, как какая-то компания допустила утечку персональных данных тысяч
+                      пользователей? Кто их только не допускал! Но, что грозит за утечки тем, кто хранит данные; что
+                      попадает в такие сливы; и как всё это предотвратить, проговорим сегодня.</p>
+                    <a href="" class="articles__link">Подробнее</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+             <div class="articles__slider-image">
+              <div class="articles__slider-wrapper">
+                <article>
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/article-desc.webp">
+                    <source media="(min-width: 1200px)" srcset="img/article-desc.jpg">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/article-tablet.webp">
+                    <source media="(min-width: 768px)" srcset="img/article-tablet.jpg">
+                    <source type="image/webp" srcset="../img/article-mobile.webp">
+                    <img class="article__image" src="../img/article-mobile.png" alt="">
+                  </picture>
+                  <div class="article__content">
+                    <p class="articles__date">01.01.2001</p>
+                    <h1 class="articles__head">Чем рискует бизнес при утечках данных, и как этого не допустить?</h1>
+                    <p class="articles__text">Слышали, как какая-то компания допустила утечку персональных данных тысяч
+                      пользователей? Кто их только не допускал! Но, что грозит за утечки тем, кто хранит данные; что
+                      попадает в такие сливы; и как всё это предотвратить, проговорим сегодня.</p>
+                    <a href="" class="articles__link">Подробнее</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+             <div class="articles__slider-image">
+              <div class="articles__slider-wrapper">
+                <article>
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/article-desc.webp">
+                    <source media="(min-width: 1200px)" srcset="img/article-desc.jpg">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/article-tablet.webp">
+                    <source media="(min-width: 768px)" srcset="img/article-tablet.jpg">
+                    <source type="image/webp" srcset="../img/article-mobile.webp">
+                    <img class="article__image" src="../img/article-mobile.png" alt="">
+                  </picture>
+                  <div class="article__content">
+                    <p class="articles__date">01.01.2001</p>
+                    <h1 class="articles__head">Чем рискует бизнес при утечках данных, и как этого не допустить?</h1>
+                    <p class="articles__text">Слышали, как какая-то компания допустила утечку персональных данных тысяч
+                      пользователей? Кто их только не допускал! Но, что грозит за утечки тем, кто хранит данные; что
+                      попадает в такие сливы; и как всё это предотвратить, проговорим сегодня.</p>
+                    <a href="" class="articles__link">Подробнее</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+             <div class="articles__slider-image">
+              <div class="articles__slider-wrapper">
+                <article>
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/article-desc.webp">
+                    <source media="(min-width: 1200px)" srcset="img/article-desc.jpg">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/article-tablet.webp">
+                    <source media="(min-width: 768px)" srcset="img/article-tablet.jpg">
+                    <source type="image/webp" srcset="../img/article-mobile.webp">
+                    <img class="article__image" src="../img/article-mobile.png" alt="">
+                  </picture>
+                  <div class="article__content">
+                    <p class="articles__date">01.01.2001</p>
+                    <h1 class="articles__head">Чем рискует бизнес при утечках данных, и как этого не допустить?</h1>
+                    <p class="articles__text">Слышали, как какая-то компания допустила утечку персональных данных тысяч
+                      пользователей? Кто их только не допускал! Но, что грозит за утечки тем, кто хранит данные; что
+                      попадает в такие сливы; и как всё это предотвратить, проговорим сегодня.</p>
+                    <a href="" class="articles__link">Подробнее</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
       </div>
     </section>
   </main>

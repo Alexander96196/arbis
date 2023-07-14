@@ -1,0 +1,185 @@
+.reviews {
+  padding: 0 27px;
+  margin-bottom: 100px;
+}
+
+.reviews__title {
+  margin-bottom: 11px;
+}
+
+.reviews__container-slide {
+  padding: 22px 23px 26px 23px;
+  border-radius: 4.5px;
+  background: #fff;
+  box-shadow: 0px 0px 3.5px 2.5px #eff8fd,
+    0px 0px 0px 0.8700000047683716px #edf7fc;
+}
+
+.reviews__block-company {
+  display: flex;
+}
+
+.reviews__company {
+  color: #033460;
+  font-family: $second-font;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  margin-bottom: 6px;
+}
+
+.reviews__implementation {
+  color: #033460;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 13.5px;
+}
+
+.reviews__photo {
+  margin-right: 13px;
+}
+
+.reviews__name {
+  width: 132px;
+}
+
+.reviews__img {
+  width: 92px;
+  height: 89px;
+}
+
+.reviews__text {
+  color: #3a3f52;
+  font-size: 10px;
+  line-height: 17.5px;
+  padding-right: 51px;
+  margin-bottom: 13px;
+}
+
+.reviews__employee {
+  color: #3a3f52;
+  font-family: $second-font;
+  font-size: 10px;
+  line-height: 13.5px;
+}
+
+.reviews__surname {
+  font-weight: 700;
+}
+
+.reviews__job {
+  font-weight: 400;
+}
+
+.reviews__slider .swiper-button-next::after {
+  position: absolute;
+}
+
+.reviews__text-desc,
+.reviews__employee-desc {
+  display: none;
+}
+
+.swiper-container {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    padding: 0 59px;
+  }
+
+  .reviews__img {
+    width: 138px;
+    height: 149px;
+  }
+
+  .reviews__container-slide {
+    padding: 70px 56px 55px 56px;
+  }
+
+  .reviews__slider {
+    padding: 0 56px;
+  }
+
+  .reviews__block-desc {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .reviews__text-mobile,
+  .reviews__employee-mobile {
+    display: none;
+  }
+
+  .reviews__text-desc,
+  .reviews__employee-desc {
+    display: block;
+  }
+
+  .reviews__company {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+
+  .reviews__implementation {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 18px;
+  }
+
+  .reviews__photo {
+    margin-right: 30px;
+  }
+
+  .reviews__name {
+    width: 250px;
+  }
+
+  .reviews__img {
+    width: 138px;
+    height: 149px;
+    margin-bottom: 18px;
+  }
+
+  .reviews__text {
+    font-size: 14px;
+    line-height: 24px;
+    padding-right: 0;
+    margin-bottom: 13px;
+  }
+
+  .reviews__employee {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .reviews__job {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .reviews {
+    padding-right: calc(50% - 490px);
+    padding-left: calc(50% - 490px);
+  }
+
+  .reviews__name {
+    width: 440px;
+  }
+
+  .reviews__img {
+    width: 146px;
+    height: 149px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .reviews {
+    padding-right: calc(50% - 590px);
+    padding-left: calc(50% - 590px);
+  }
+}
