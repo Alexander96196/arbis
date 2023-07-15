@@ -28,10 +28,16 @@ accordionItems.forEach(function (item) {
 new Swiper('.reviews__slider', {
   centeredSlides: true,
   loop: true,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
+
+  breakpoints: {
+    768: {
+      spaceBetween: 50,
+    },
+    1200: {
+      spaceBetween: 60,
+    }
   },
+
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -51,17 +57,39 @@ new Swiper('.clients__slider', {
   breakpoints: {
     768: {
       slidesPerView: 2,
-      spaceBetween: 30,
+      spaceBetween: 50,
     },
     1200: {
       slidesPerView: 3,
       spaceBetween: 60,
     }
   },
+
+  navigation: {
+    clickable: true,
+    nextEl: '.reviews__button--next',
+    prevEl: '.reviews__button--prev',
+  },
 });
 
 new Swiper('.articles__slider', {
   loop: true,
   slidesPerView: 2,
-  spaceBetween: 6,
+  spaceBetween: 10,
+
+  breakpoints: {
+    768: {
+      spaceBetween: 30,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    }
+  },
+
+  navigation: {
+    clickable: true,
+    nextEl: '.reviews__button--next',
+    prevEl: '.reviews__button--prev',
+  },
 });

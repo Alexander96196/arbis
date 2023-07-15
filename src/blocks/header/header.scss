@@ -243,7 +243,13 @@
 
   .header__nav {
     display: flex;
-    border-top: 1px solid #c6c6c6;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 980px;
+      height: 1px;
+      background-color: #c6c6c6;
+    }
   }
 }
 
