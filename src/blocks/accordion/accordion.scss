@@ -5,7 +5,7 @@
   font-weight: 700;
   line-height: 13.5px;
   color: #2e55a2;
-  padding: 18px 47px 18px 23px;
+  padding: 18px 55px 18px 23px;
   margin-bottom: 30px;
   border-radius: 4.486px;
   background: #fff;
@@ -14,10 +14,11 @@
   &::before {
     content: "";
     position: absolute;
-    width: 19px;
+    width: 20px;
     height: 11px;
     right: 26px;
     background-image: url("../../img/icons/svg/accordion-arrow.svg");
+    background-repeat: no-repeat;
   }
 }
 

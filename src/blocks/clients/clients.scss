@@ -13,6 +13,26 @@
   background: #d9d9d9;
 }
 
+.clients__slider {
+  position: relative;
+  padding-bottom: 86px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  margin-top: calc(0px - (var(--swiper-navigation-size) / 15)) !important;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: var(--swiper-navigation-sides-offset, 178px) !important;
+  right: auto;
+}
+
+.clients__slider [class^="swiper-button-"]::after {
+  content: "";
+}
+
 @media (min-width: 768px) {
   .clients {
     padding: 0 59px;

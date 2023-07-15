@@ -935,4 +935,32 @@
     padding-right: calc(50% - 590px);
     padding-left: calc(50% - 590px);
   }
+
+  .services__price-item {
+    &::before {
+      left: 160px;
+    }
+
+    &--audit {
+      padding: 144px 90px 35px 90px;
+    }
+
+    &--monitoring {
+      padding: 144px 100px 35px 100px;
+    }
+
+    &--fix {
+      padding: 144px 95px 35px 95px;
+    }
+  }
+
+  .services__price-desc {
+    &--title {
+      margin-bottom: 8px;
+    }
+
+    &--text {
+      margin-bottom: 40px;
+    }
+  }
 }

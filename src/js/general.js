@@ -64,6 +64,6 @@ new Swiper('.clients__slider', {
 
 new Swiper('.articles__slider', {
   loop: true,
-  // slidesPerView: 2,
+  slidesPerView: 2,
   spaceBetween: 6,
 });
