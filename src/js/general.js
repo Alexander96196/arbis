@@ -1,4 +1,4 @@
-const { default: Swiper } = require("swiper");
+import Swiper from 'swiper/swiper-bundle';
 
 const toggleNav = document.querySelector(`.header__toggle`);
 const header = document.querySelector(`.header`);
@@ -26,10 +26,8 @@ accordionItems.forEach(function (item) {
 
 // Инициализация слайдера
 new Swiper('.reviews__slider', {
-  effect: 'fade',
   centeredSlides: true,
   loop: true,
-  spaceBetween: 100,
   autoplay: {
     delay: 4000,
     disableOnInteraction: false,
@@ -40,8 +38,8 @@ new Swiper('.reviews__slider', {
   },
   navigation: {
     clickable: true,
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.reviews__button--next',
+    prevEl: '.reviews__button--prev',
   },
 });
 
