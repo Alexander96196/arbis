@@ -1,0 +1,29 @@
+.footer {
+  background-color: #eaf9ff;
+  color: #82a6bf;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 10px;
+  padding: 31px 103px 50px 16px;
+}
+
+.socials-mobile {
+  display: none;
+}
+
+.footer__socials {
+  margin-bottom: 13px;
+}
+
+.footer__contact {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.footer__socials-img {
+  margin-right: 5px;
+}
+
+.footer__link-privacy {
+  text-decoration: underline;
+}
