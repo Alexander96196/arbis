@@ -278,7 +278,7 @@
                   резервных копий. В таком случае оперативно восстановить работу системы получится даже при физическом
                   повреждении серверов (в результате пожара или аварии)
                 </p>
-                <div class="services__offer-image services__offer-image--accordion">
+                <div class="services__offer-image services__offer-image--laptop">
                   <picture>
                     <source media="(min-width: 1200px)" type="image/webp" srcset="img/laptop-desc.webp">
                     <source media="(min-width: 1200px)" srcset="img/laptop-desc.jpg">
@@ -611,7 +611,7 @@
                 <div class="reviews__photo">
                   <img src="" alt="" class="reviews__img">
                   <div class="reviews__employee reviews__employee-desc">
-                    <p class="reviews__surname">Имя Фамилия</p>
+                    <p class="reviews__surname">Имя Фамилия1</p>
                     <p class="reviews__job">Должность</p>
                   </div>
                 </div>
@@ -670,11 +670,11 @@
         </div>
         <div class="reviews__btn-wrapper">
           <div class="swiper-pagination"></div>
-          <div class="reviews__button">
-            <div class="swiper-button-prev">
+          <div class="reviews__buttons">
+            <div class="reviews__button reviews__button--prev">
               <img src="img/icons/svg/prev.svg" alt="Стрелка назад">
             </div>
-            <div class="swiper-button-next">
+            <div class="reviews__button reviews__button--next">
               <img src="img/icons/svg/next.svg" alt="Стрелка вперед">
             </div>
           </div>
@@ -686,45 +686,56 @@
       <div class="clients__slider swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="clients__slider-image">
-              <img src="" alt="" class="clients__img">
+            <div class="clients__container-slide">
+              <div class="clients__slider-image">
+                <img src="" alt="" class="clients__img">
+              </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="clients__slider-image">
-              <img src="" alt="" class="clients__img">
+            <div class="clients__container-slide">
+              <div class="clients__slider-image">
+                <img src="" alt="" class="clients__img">
+              </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="clients__slider-image">
-              <img src="" alt="" class="clients__img">
+            <div class="clients__container-slide">
+              <div class="clients__slider-image">
+                <img src="" alt="" class="clients__img">
+              </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="clients__slider-image">
-              <img src="" alt="" class="clients__img">
+            <div class="clients__container-slide">
+              <div class="clients__slider-image">
+                <img src="" alt="" class="clients__img">
+              </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="clients__slider-image">
-              <img src="" alt="" class="clients__img">
+            <div class="clients__container-slide">
+              <div class="clients__slider-image">
+                <img src="" alt="" class="clients__img">
+              </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="clients__slider-image">
-              <img src="" alt="" class="clients__img">
+            <div class="clients__container-slide">
+              <div class="clients__slider-image">
+                <img src="" alt="" class="clients__img">
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="reviews__btn-wrapper">
-        <div class="swiper-pagination"></div>
-        <div class="reviews__button">
-          <div class="swiper-button-prev">
-            <img src="img/icons/svg/prev.svg" alt="Стрелка назад">
-          </div>
-          <div class="swiper-button-next">
-            <img src="img/icons/svg/next.svg" alt="Стрелка вперед">
+        <div class="reviews__btn-wrapper">
+          <div class="reviews__buttons">
+            <div class="reviews__button reviews__button--prev">
+              <img src="img/icons/svg/prev.svg" alt="Стрелка назад">
+            </div>
+            <div class="reviews__button reviews__button--next">
+              <img src="img/icons/svg/next.svg" alt="Стрелка вперед">
+            </div>
           </div>
         </div>
       </div>
@@ -734,151 +745,202 @@
       <div class="articles__slider swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="aritcle__slider-content">
-              <article>
-                <picture>
-                  <source media="(min-width: 1200px)" type="image/webp" srcset="img/article-desc.webp">
-                  <source media="(min-width: 1200px)" srcset="img/article-desc.jpg">
-                  <source media="(min-width: 768px)" type="image/webp" srcset="img/article-tablet.webp">
-                  <source media="(min-width: 768px)" srcset="img/article-tablet.jpg">
-                  <source type="image/webp" srcset="img/article-mobile.webp">
-                  <img class="article__image" src="img/article-mobile.png" alt="">
-                </picture>
-                <div class="article__content">
-                  <p class="articles__date">01.01.2001</p>
-                  <h1 class="articles__head">Чем рискует бизнес при утечках данных, и как этого не допустить?</h1>
-                  <p class="articles__text">Слышали, как какая-то компания допустила утечку персональных данных тысяч
-                    пользователей? Кто их только не допускал! Но, что грозит за утечки тем, кто хранит данные; что
-                    попадает в такие сливы; и как всё это предотвратить, проговорим сегодня.</p>
-                  <a href="" class="articles__link">Подробнее</a>
-                </div>
-              </article>
+            <div class="articles__container-slide">
+              <div class="aritcles__slider-content">
+                <article>
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/article-desc.webp">
+                    <source media="(min-width: 1200px)" srcset="img/article-desc.jpg">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/article-tablet.webp">
+                    <source media="(min-width: 768px)" srcset="img/article-tablet.jpg">
+                    <source type="image/webp" srcset="img/article-mobile.webp">
+                    <img class="article__image" src="img/article-mobile.png" alt="">
+                  </picture>
+                  <div class="article__content">
+                    <p class="articles__date">01.01.2001</p>
+                    <h1 class="articles__head">Чем рискует бизнес при утечках данных, и как этого не допустить?</h1>
+                    <p class="articles__text">Слышали, как какая-то компания допустила утечку персональных данных тысяч
+                      пользователей? Кто их только не допускал! Но, что грозит за утечки тем, кто хранит данные; что
+                      попадает в такие сливы; и как всё это предотвратить, проговорим сегодня.</p>
+                    <a href="" class="articles__link">Подробнее</a>
+                  </div>
+                </article>
+              </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="aritcle__slider-content">
-              <article>
-                <picture>
-                  <source media="(min-width: 1200px)" type="image/webp" srcset="img/article-desc.webp">
-                  <source media="(min-width: 1200px)" srcset="img/article-desc.jpg">
-                  <source media="(min-width: 768px)" type="image/webp" srcset="img/article-tablet.webp">
-                  <source media="(min-width: 768px)" srcset="img/article-tablet.jpg">
-                  <source type="image/webp" srcset="img/article-mobile.webp">
-                  <img class="article__image" src="img/article-mobile.png" alt="">
-                </picture>
-                <div class="article__content">
-                  <p class="articles__date">01.01.2001</p>
-                  <h1 class="articles__head">Чем рискует бизнес при утечках данных, и как этого не допустить?</h1>
-                  <p class="articles__text">Слышали, как какая-то компания допустила утечку персональных данных тысяч
-                    пользователей? Кто их только не допускал! Но, что грозит за утечки тем, кто хранит данные; что
-                    попадает в такие сливы; и как всё это предотвратить, проговорим сегодня.</p>
-                  <a href="" class="articles__link">Подробнее</a>
-                </div>
-              </article>
+          <div class="aritcles__slide swiper-slide">
+            <div class="articles__container-slide">
+              <div class="aritcles__slider-content">
+                <article>
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/article-desc.webp">
+                    <source media="(min-width: 1200px)" srcset="img/article-desc.jpg">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/article-tablet.webp">
+                    <source media="(min-width: 768px)" srcset="img/article-tablet.jpg">
+                    <source type="image/webp" srcset="img/article-mobile.webp">
+                    <img class="article__image" src="img/article-mobile.png" alt="">
+                  </picture>
+                  <div class="article__content">
+                    <p class="articles__date">01.01.2001</p>
+                    <h1 class="articles__head">Чем рискует бизнес при утечках данных, и как этого не допустить?</h1>
+                    <p class="articles__text">Слышали, как какая-то компания допустила утечку персональных данных тысяч
+                      пользователей? Кто их только не допускал! Но, что грозит за утечки тем, кто хранит данные; что
+                      попадает в такие сливы; и как всё это предотвратить, проговорим сегодня.</p>
+                    <a href="" class="articles__link">Подробнее</a>
+                  </div>
+                </article>
+              </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="aritcle__slider-content">
-              <article>
-                <picture>
-                  <source media="(min-width: 1200px)" type="image/webp" srcset="img/article-desc.webp">
-                  <source media="(min-width: 1200px)" srcset="img/article-desc.jpg">
-                  <source media="(min-width: 768px)" type="image/webp" srcset="img/article-tablet.webp">
-                  <source media="(min-width: 768px)" srcset="img/article-tablet.jpg">
-                  <source type="image/webp" srcset="img/article-mobile.webp">
-                  <img class="article__image" src="img/article-mobile.png" alt="">
-                </picture>
-                <div class="article__content">
-                  <p class="articles__date">01.01.2001</p>
-                  <h1 class="articles__head">Чем рискует бизнес при утечках данных, и как этого не допустить?</h1>
-                  <p class="articles__text">Слышали, как какая-то компания допустила утечку персональных данных тысяч
-                    пользователей? Кто их только не допускал! Но, что грозит за утечки тем, кто хранит данные; что
-                    попадает в такие сливы; и как всё это предотвратить, проговорим сегодня.</p>
-                  <a href="" class="articles__link">Подробнее</a>
-                </div>
-              </article>
+          <div class="aritcles__slide swiper-slide">
+            <div class="articles__container-slide">
+              <div class="aritcles__slider-content">
+                <article>
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/article-desc.webp">
+                    <source media="(min-width: 1200px)" srcset="img/article-desc.jpg">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/article-tablet.webp">
+                    <source media="(min-width: 768px)" srcset="img/article-tablet.jpg">
+                    <source type="image/webp" srcset="img/article-mobile.webp">
+                    <img class="article__image" src="img/article-mobile.png" alt="">
+                  </picture>
+                  <div class="article__content">
+                    <p class="articles__date">01.01.2001</p>
+                    <h1 class="articles__head">Чем рискует бизнес при утечках данных, и как этого не допустить?</h1>
+                    <p class="articles__text">Слышали, как какая-то компания допустила утечку персональных данных тысяч
+                      пользователей? Кто их только не допускал! Но, что грозит за утечки тем, кто хранит данные; что
+                      попадает в такие сливы; и как всё это предотвратить, проговорим сегодня.</p>
+                    <a href="" class="articles__link">Подробнее</a>
+                  </div>
+                </article>
+              </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="aritcle__slider-content">
-              <article>
-                <picture>
-                  <source media="(min-width: 1200px)" type="image/webp" srcset="img/article-desc.webp">
-                  <source media="(min-width: 1200px)" srcset="img/article-desc.jpg">
-                  <source media="(min-width: 768px)" type="image/webp" srcset="img/article-tablet.webp">
-                  <source media="(min-width: 768px)" srcset="img/article-tablet.jpg">
-                  <source type="image/webp" srcset="img/article-mobile.webp">
-                  <img class="article__image" src="img/article-mobile.png" alt="">
-                </picture>
-                <div class="article__content">
-                  <p class="articles__date">01.01.2001</p>
-                  <h1 class="articles__head">Чем рискует бизнес при утечках данных, и как этого не допустить?</h1>
-                  <p class="articles__text">Слышали, как какая-то компания допустила утечку персональных данных тысяч
-                    пользователей? Кто их только не допускал! Но, что грозит за утечки тем, кто хранит данные; что
-                    попадает в такие сливы; и как всё это предотвратить, проговорим сегодня.</p>
-                  <a href="" class="articles__link">Подробнее</a>
-                </div>
-              </article>
+          <div class="aritcles__slide swiper-slide">
+            <div class="articles__container-slide">
+              <div class="aritcles__slider-content">
+                <article>
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/article-desc.webp">
+                    <source media="(min-width: 1200px)" srcset="img/article-desc.jpg">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/article-tablet.webp">
+                    <source media="(min-width: 768px)" srcset="img/article-tablet.jpg">
+                    <source type="image/webp" srcset="img/article-mobile.webp">
+                    <img class="article__image" src="img/article-mobile.png" alt="">
+                  </picture>
+                  <div class="article__content">
+                    <p class="articles__date">01.01.2001</p>
+                    <h1 class="articles__head">Чем рискует бизнес при утечках данных, и как этого не допустить?</h1>
+                    <p class="articles__text">Слышали, как какая-то компания допустила утечку персональных данных тысяч
+                      пользователей? Кто их только не допускал! Но, что грозит за утечки тем, кто хранит данные; что
+                      попадает в такие сливы; и как всё это предотвратить, проговорим сегодня.</p>
+                    <a href="" class="articles__link">Подробнее</a>
+                  </div>
+                </article>
+              </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="aritcle__slider-content">
-              <article>
-                <picture>
-                  <source media="(min-width: 1200px)" type="image/webp" srcset="img/article-desc.webp">
-                  <source media="(min-width: 1200px)" srcset="img/article-desc.jpg">
-                  <source media="(min-width: 768px)" type="image/webp" srcset="img/article-tablet.webp">
-                  <source media="(min-width: 768px)" srcset="img/article-tablet.jpg">
-                  <source type="image/webp" srcset="img/article-mobile.webp">
-                  <img class="article__image" src="img/article-mobile.png" alt="">
-                </picture>
-                <div class="article__content">
-                  <p class="articles__date">01.01.2001</p>
-                  <h1 class="articles__head">Чем рискует бизнес при утечках данных, и как этого не допустить?</h1>
-                  <p class="articles__text">Слышали, как какая-то компания допустила утечку персональных данных тысяч
-                    пользователей? Кто их только не допускал! Но, что грозит за утечки тем, кто хранит данные; что
-                    попадает в такие сливы; и как всё это предотвратить, проговорим сегодня.</p>
-                  <a href="" class="articles__link">Подробнее</a>
-                </div>
-              </article>
+          <div class="aritcles__slide swiper-slide">
+            <div class="articles__container-slide">
+              <div class="aritcles__slider-content">
+                <article>
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/article-desc.webp">
+                    <source media="(min-width: 1200px)" srcset="img/article-desc.jpg">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/article-tablet.webp">
+                    <source media="(min-width: 768px)" srcset="img/article-tablet.jpg">
+                    <source type="image/webp" srcset="img/article-mobile.webp">
+                    <img class="article__image" src="img/article-mobile.png" alt="">
+                  </picture>
+                  <div class="article__content">
+                    <p class="articles__date">01.01.2001</p>
+                    <h1 class="articles__head">Чем рискует бизнес при утечках данных, и как этого не допустить?</h1>
+                    <p class="articles__text">Слышали, как какая-то компания допустила утечку персональных данных тысяч
+                      пользователей? Кто их только не допускал! Но, что грозит за утечки тем, кто хранит данные; что
+                      попадает в такие сливы; и как всё это предотвратить, проговорим сегодня.</p>
+                    <a href="" class="articles__link">Подробнее</a>
+                  </div>
+                </article>
+              </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="aritcle__slider-content">
-              <article>
-                <picture>
-                  <source media="(min-width: 1200px)" type="image/webp" srcset="img/article-desc.webp">
-                  <source media="(min-width: 1200px)" srcset="img/article-desc.jpg">
-                  <source media="(min-width: 768px)" type="image/webp" srcset="img/article-tablet.webp">
-                  <source media="(min-width: 768px)" srcset="img/article-tablet.jpg">
-                  <source type="image/webp" srcset="img/article-mobile.webp">
-                  <img class="article__image" src="img/article-mobile.png" alt="">
-                </picture>
-                <div class="article__content">
-                  <p class="articles__date">01.01.2001</p>
-                  <h1 class="articles__head">Чем рискует бизнес при утечках данных, и как этого не допустить?</h1>
-                  <p class="articles__text">Слышали, как какая-то компания допустила утечку персональных данных тысяч
-                    пользователей? Кто их только не допускал! Но, что грозит за утечки тем, кто хранит данные; что
-                    попадает в такие сливы; и как всё это предотвратить, проговорим сегодня.</p>
-                  <a href="" class="articles__link">Подробнее</a>
-                </div>
-              </article>
+          <div class="aritcles__slide swiper-slide">
+            <div class="articles__container-slide">
+              <div class="aritcles__slider-content">
+                <article>
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/article-desc.webp">
+                    <source media="(min-width: 1200px)" srcset="img/article-desc.jpg">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/article-tablet.webp">
+                    <source media="(min-width: 768px)" srcset="img/article-tablet.jpg">
+                    <source type="image/webp" srcset="img/article-mobile.webp">
+                    <img class="article__image" src="img/article-mobile.png" alt="">
+                  </picture>
+                  <div class="article__content">
+                    <p class="articles__date">01.01.2001</p>
+                    <h1 class="articles__head">Чем рискует бизнес при утечках данных, и как этого не допустить?</h1>
+                    <p class="articles__text">Слышали, как какая-то компания допустила утечку персональных данных тысяч
+                      пользователей? Кто их только не допускал! Но, что грозит за утечки тем, кто хранит данные; что
+                      попадает в такие сливы; и как всё это предотвратить, проговорим сегодня.</p>
+                    <a href="" class="articles__link">Подробнее</a>
+                  </div>
+                </article>
+              </div>
             </div>
           </div>
         </div>
-        <div class="swiper-button-prev">
-          <img src="img/icons/svg/prev.svg" alt="Стрелка назад">
-        </div>
-        <div class="swiper-button-next">
-          <img src="img/icons/svg/next.svg" alt="Стрелка вперед">
+        <div class="reviews__btn-wrapper">
+          <div class="reviews__buttons">
+            <div class="reviews__button reviews__button--prev">
+              <img src="img/icons/svg/prev.svg" alt="Стрелка назад">
+            </div>
+            <div class="reviews__button reviews__button--next">
+              <img src="img/icons/svg/next.svg" alt="Стрелка вперед">
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
   <footer class="footer">
-<div class="footer__socials">
-   
-</div>
+    <div class="footer__inner">
+      <div class="footer__socials">
+        <a href="#" class="footer__socials-link footer__socials-link--vk"><span class="socials-mobile">Сообщество
+            ВКонтакте</span>
+          <img src="img/icons/svg/vk-mobile.svg" class="footer__socials-img" alt="Вконтакте">
+        </a>
+        <a href="#" class="footer__socials-link footer__socials-link--1c"><span class="socials-mobile">Партнер 1С</span>
+          <img src="img/icons/svg/1c-mobile.svg" class="footer__socials-img" alt="1с">
+        </a>
+        <a href="#" class="footer__socials-link footer__socials-link--hh"><span class="socials-mobile">Наши
+            вакансии</span>
+          <img src="img/icons/svg/hh-mobile.svg" class="footer__socials-img" alt="Hh"></a>
+      </div>
+      <div class="footer__contact-desc">
+        <div class="footer__address">
+          <p class="footer__address-text">Россия, 163000, г. Архангельск,</p>
+          <p class="footer__address-text">пр. Троицкий, 52, офис 2002</p>
+        </div>
+        <div class="footer__connection">
+          <a href="#" class="footer__link">(8182) 60-35-75</a>
+          <a href="#" class="footer__link">office@arbis29.ru</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__contact">
+      <div class="footer__connection">
+        <a href="#" class="footer__link">(8182) 60-35-75</a>
+        <a href="#" class="footer__link">office@arbis29.ru</a>
+      </div>
+      <div class="footer__address">
+        <p class="footer__address-text">Россия, 163000, г. Архангельск,</p>
+        <p class="footer__address-text">пр. Троицкий, 52, офис 2002</p>
+      </div>
+    </div>
+    <div class="footer__wrap">
+      <p class="footer__copyright">©️ АО «АРБИС», 2002–2023 гг.</p>
+      <a href="" class="footer__link-privacy">Политика обработки персональных данных</a>
+    </div>
   </footer>
   <script src="js/general.js"></script>
 </body>
