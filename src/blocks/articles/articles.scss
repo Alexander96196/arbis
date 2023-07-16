@@ -96,7 +96,7 @@
   }
 
   .article__image {
-    width: 240px;
+    width: 100%;
     height: 111px;
   }
 
@@ -109,12 +109,17 @@
     top: 50%;
     margin-top: -45px;
   }
+
+  .articles__container-slide {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1200px) {
   .articles {
     padding-right: calc(50% - 490px);
     padding-left: calc(50% - 490px);
+    margin-bottom: 140px;
   }
 
   .articles__date {
@@ -134,6 +139,11 @@
     line-height: 19px;
     -webkit-line-clamp: 8;
     margin-bottom: 27px;
+  }
+
+  .article__image {
+    width: 100%;
+    height: 100%;
   }
 }
 

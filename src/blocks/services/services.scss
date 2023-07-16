@@ -733,6 +733,21 @@
   .services__application-img {
     filter: drop-shadow(0 1px 35px #87e7ea);
   }
+
+  .services__offer-image {
+    right: 233px;
+    bottom: 30px;
+
+    &--accordion {
+      left: 228px;
+      bottom: 75px;
+    }
+
+    &--laptop {
+      left: 155px;
+      bottom: 107px;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -961,6 +976,12 @@
 
     &--text {
       margin-bottom: 40px;
+    }
+  }
+
+  .services__offer-accordion {
+    &--copy {
+      padding: 124px 720px 125px 87px;
     }
   }
 }

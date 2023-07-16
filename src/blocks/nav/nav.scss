@@ -3,7 +3,22 @@
 }
 
 .nav__item {
+  position: relative;
   padding: 0 16px;
+
+  &--arrow {
+    padding-right: 15px;
+
+    &::before {
+      @include pseudo;
+      position: absolute;
+      width: 11px;
+      height: 5px;
+      right: 35px;
+      top: 26px;
+      background-image: url("../../img/icons/svg/arrow.svg");
+    }
+  }
 }
 
 .nav__link {
@@ -58,7 +73,7 @@
       &::before {
         @include pseudo;
         position: absolute;
-        width: 9px;
+        width: 11px;
         height: 5px;
         right: 0;
         top: 26px;

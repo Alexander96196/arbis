@@ -59,6 +59,10 @@ new Swiper('.clients__slider', {
       slidesPerView: 2,
       spaceBetween: 50,
     },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 70,
+    },
     1200: {
       slidesPerView: 3,
       spaceBetween: 60,
@@ -79,11 +83,14 @@ new Swiper('.articles__slider', {
 
   breakpoints: {
     768: {
-      spaceBetween: 30,
+      spaceBetween: 80,
+    },
+    1024: {
+      slidesPerView: 3,
     },
     1200: {
       slidesPerView: 3,
-      spaceBetween: 50,
+      spaceBetween: 60,
     }
   },
 
