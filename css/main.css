@@ -1943,7 +1943,7 @@ td {
     display: flex; }
   .reviews__btn-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
     margin-top: 14px;
     padding-left: 10px;
