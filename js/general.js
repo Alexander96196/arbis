@@ -9936,6 +9936,23 @@ accordionItems.forEach(function (item) {
     }
   });
 });
+var accordionHeaders = document.querySelectorAll('.accordion__header');
+accordionHeaders.forEach(function (title) {
+  return title.addEventListener('click', rotate);
+});
+function rotate(e) {
+  e.preventDefault();
+  var accordions = document.querySelectorAll('.accordion__header');
+  var accordion = this.closest('.accordion__header');
+  if (!accordion.classList.contains('active')) {
+    accordions.forEach(function (accordion) {
+      return accordion.classList.remove('active');
+    });
+    accordion.classList.add('active');
+  } else {
+    accordion.classList.remove('active');
+  }
+}
 
 // Инициализация слайдера
 new swiper_swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"]('.reviews__slider', {

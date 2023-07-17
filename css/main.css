@@ -1581,6 +1581,8 @@ a {
     .services__offer-image--accordion {
       left: 753px;
       bottom: 70px; }
+    .services__offer-image--laptop {
+      left: 680px; }
   .services__offer-list {
     width: 390px; }
   .services__price-list {
@@ -1710,7 +1712,8 @@ a {
   margin-bottom: 30px;
   border-radius: 4.486px;
   background: #fff;
-  box-shadow: 0px 0px 3.5px 2.5px #eef8fd; }
+  box-shadow: 0px 0px 3.5px 2.5px #eef8fd;
+  cursor: pointer; }
   .accordion__header::before {
     content: "";
     position: absolute;
@@ -1719,6 +1722,12 @@ a {
     right: 26px;
     background-image: url("../img/icons/svg/accordion-arrow.svg");
     background-repeat: no-repeat; }
+
+.accordion__panel.active {
+  display: block; }
+
+.accordion__header.active::before {
+  transform: rotate(-180deg); }
 
 .accordion__content {
   font-size: 10px;
