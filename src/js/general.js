@@ -24,6 +24,23 @@ accordionItems.forEach(function (item) {
   });
 });
 
+const accordionHeaders = document.querySelectorAll('.accordion__header');
+accordionHeaders.forEach(title => title.addEventListener('click', rotate));
+
+
+function rotate(e) {
+  e.preventDefault();
+  const accordions = document.querySelectorAll('.accordion__header');
+  const accordion = this.closest('.accordion__header');
+  if (!accordion.classList.contains('active')) {
+    accordions.forEach((accordion) => accordion.classList.remove('active'));
+    accordion.classList.add('active');
+  } else {
+    accordion.classList.remove('active');
+  }
+}
+
+
 // Инициализация слайдера
 new Swiper('.reviews__slider', {
   centeredSlides: true,

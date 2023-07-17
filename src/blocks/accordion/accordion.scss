@@ -10,6 +10,7 @@
   border-radius: 4.486px;
   background: #fff;
   box-shadow: 0px 0px 3.5px 2.5px #eef8fd;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -20,6 +21,14 @@
     background-image: url("../../img/icons/svg/accordion-arrow.svg");
     background-repeat: no-repeat;
   }
+}
+
+.accordion__panel.active {
+  display: block;
+}
+
+.accordion__header.active::before {
+  transform: rotate(-180deg);
 }
 
 .accordion__content {
@@ -202,7 +211,7 @@
       &::before {
         width: 59px;
         height: 59px;
-        left: 155px;;
+        left: 155px;
         background-image: url("../../img/icons/svg/install-desc.svg");
       }
     }
