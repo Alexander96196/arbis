@@ -15,6 +15,10 @@ td {
   background-color: #f6f6f6;
 }
 
+.table__color-hosting {
+  padding: 12px 0;
+}
+
 .table__light-blue {
   background-color: #009ee2;
   color: #fff;
@@ -49,10 +53,23 @@ td {
   width: 60px;
   height: 33px;
   text-align: center;
+
+  &--hosting {
+    padding: 12px 0;
+  }
 }
 
 .tariff__table {
   margin-bottom: 36px;
+}
+
+.tariff__table-wrapper {
+  margin-bottom: 10px;
+}
+
+.tariff__hosting-button {
+  width: 138px;
+  padding: 10px 13px;
 }
 
 .tariff__title {
@@ -81,10 +98,23 @@ td {
     padding: 23px 40px;
   }
 
+  .table__second--hosting {
+    padding: 0;
+  }
+
   .table__light-blue,
   .table__blue,
   .table__dark-blue {
-    padding: 23px 40px;
+    padding: 23px 12px;
+  }
+
+  .tariff__hosting-button {
+    width: 246px;
+    padding: 20px 13px;
+  }
+
+  .tariff__table-wrapper {
+    margin-bottom: 36px;
   }
 }
 
@@ -99,7 +129,12 @@ td {
 
   .table__second {
     padding: 9px 74px;
+
+    &--hosting {
+      padding: 9px 42px;
+    }
   }
+  
 
   .table__light-grey--bold {
     width: inherit;

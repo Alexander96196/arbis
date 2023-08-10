@@ -1,12 +1,12 @@
 .promo {
   position: relative;
   width: 100%;
-  height: 547px;
   padding: 58px 27px 0 27px;
   background-image: url("../../img/promo-bg-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-bottom: 30px;
 }
 
 .promo__image {
@@ -35,6 +35,18 @@
   }
 }
 
+.promo__desc-list {
+  font-size: 10px;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.promo__desc-item {
+  margin-bottom: 10px;
+}
+
 .promo__price {
   position: relative;
   width: 266px;
@@ -55,7 +67,7 @@
 
   & span {
     margin-left: 33px;
-    margin-right: 11px;
+    margin-right: 18px;
 
     &::before {
       content: "";
@@ -82,9 +94,11 @@
 }
 
 .promo__button {
+  display: block;
   width: 238px;
   height: 44px;
   font-size: 12px;
+  padding: 14px 26px;
   margin: 0 auto;
   border-radius: 4px;
   background: #0293dc;
@@ -107,7 +121,11 @@
   .promo__title {
     width: 366px;
     font-size: 36px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+  }
+
+  .promo__desc-list {
+    font-size: 12px;
   }
 
   .promo__price {
@@ -126,7 +144,7 @@
 
     & span {
       margin-left: 41px;
-      margin-right: 11px;
+      margin-right: 22px;
 
       &::before {
         content: "";
@@ -149,8 +167,9 @@
 
   .promo__button {
     width: 310px;
-    font-size: 15px;
     height: 57px;
+    font-size: 15px;
+    padding: 20px 39px;
     margin: 0;
   }
 
@@ -169,7 +188,7 @@
   .promo {
     height: 678px;
     padding-top: 145px;
-    margin-top: 39px;
+    margin-top: 50px;
     background-image: url("../../img/promo-bg-desk.jpg");
   }
 
@@ -181,13 +200,13 @@
   .promo__title {
     width: 610px;
     font-size: 60px;
-    margin-bottom: 92px;
+    margin-bottom: 24px;
   }
 
   .promo__price {
     width: 610px;
     font-size: 40px;
-    margin-bottom: 110px;
+    margin-bottom: 48px;
 
     &::before {
       content: "";
@@ -200,7 +219,7 @@
 
     & span {
       margin-left: 75px;
-      margin-right: 24px;
+      margin-right: 45px;
 
       &::before {
         content: "";
@@ -219,6 +238,12 @@
         background-image: url("../../img/icons/svg/ellipse-desk.svg");
       }
     }
+  }
+
+  .promo__desc-list  {
+    font-size: 23px;
+    padding-left: 18px;
+    margin-bottom: 50px;
   }
 
   .promo__image-man {

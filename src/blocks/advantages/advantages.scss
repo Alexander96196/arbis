@@ -1,7 +1,3 @@
-.advantages {
-  padding: 31px 27px;
-}
-
 .advantages__title {
   width: 98px;
   font-family: $second-font;
@@ -46,11 +42,6 @@
 }
 
 @media (min-width: 768px) {
-  .advantages {
-    padding-left: 59px;
-    padding-right: 59px;
-  }
-
   .advantages__title {
     width: 180px;
     font-size: 30px;

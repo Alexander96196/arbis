@@ -1,9 +1,19 @@
-.services {
+.services,
+.services__hosting {
   padding: 0 27px;
 }
 
 .services__title {
   margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.services__content {
+  display: none;
+}
+
+.services__subtitle {
+  margin-bottom: 12px;
 }
 
 .services__desc {
@@ -183,8 +193,13 @@
   }
 }
 
+.services__price-button {
+  margin: 0 auto;
+}
+
 .services__hosting-title {
   margin-bottom: 22px;
+  font-weight: 700;
 }
 
 .services__desc-hosting {
@@ -362,8 +377,12 @@
 }
 
 .services__security-button {
-  margin: 0 14px;
-  padding: 14px 19px;
+  width: 208px;
+  height: 35px;
+  font-size: 10px;
+  line-height: 20px;
+  margin: 0 auto;
+  padding: 10px 23px;
 }
 
 .services__connection-title {
@@ -390,23 +409,26 @@
 
 .services__help-title {
   margin-bottom: 20px;
+  padding-right: 40px;
 }
 
 .services__help-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3px;
+  row-gap: 8px;
   @include list-reset;
   margin-bottom: 36px;
 }
 
 .services__help-item {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: normal;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-
-  &:not(:last-child) {
-    margin-bottom: 21px;
-  }
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ade6ff;
+  text-align: center;
 }
 
 .services__application {
@@ -429,7 +451,7 @@
 }
 
 .services__application-button {
-  margin: 0;
+  margin: 0 auto;
   padding: 14px 22px;
 }
 
@@ -451,24 +473,93 @@
   @include list-reset;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 21px 23px;
+  column-gap: 3px;
+  row-gap: 8px;
 }
 
 .services__extra-item {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: normal;
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ade6ff;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
   .services {
+    position: relative;
     padding: 0 59px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 190px;
+      height: 72px;
+      top: -14px;
+      right: 0;
+      background-image: url("../../img/back-title-right.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 427px;
+      height: 72px;
+      top: -14px;
+      left: 0;
+      background-image: url("../../img/back-title-left.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .services__block {
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .services__hosting {
+    position: relative;
+    padding: 0 59px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 471px;
+      height: 72px;
+      top: -18px;
+      right: 0;
+      background-image: url("../../img/back-title-right-host.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 130px;
+      height: 72px;
+      top: -25px;
+      left: -52px;
+      background-image: url("../../img/back-title-left-host.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 
   .services__title {
+    position: relative;
     margin-bottom: 26px;
+    padding-right: 210px;
   }
 
   .services__desc {
@@ -552,9 +643,15 @@
   }
 
   .services__price-button {
-    margin: 0 205px;
-    padding: 18px 43px;
+    width: 311px;
+    margin: 0 auto;
+    padding: 18px 34px;
     font-size: 15px;
+  }
+
+  .services__hosting-title {
+    position: relative;
+    margin-bottom: 90px;
   }
 
   .services__refuse-title {
@@ -672,9 +769,11 @@
   }
 
   .services__security-button {
+    width: 304px;
+    height: 56px;
     font-size: 15px;
-    margin: 0 171px;
-    padding: 18px 38px;
+    margin: 0 auto;
+    padding: 19px 31px;
   }
 
   .services__connection-title {
@@ -694,12 +793,14 @@
   .services__help-title,
   .services__extra-title {
     margin-bottom: 44px;
+    padding-right: 40px;
   }
 
   .services__help-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 41px 98px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3px;
+    row-gap: 8px;
   }
 
   .services__help-item,
@@ -711,7 +812,8 @@
 
   .services__extra-list {
     grid-template-columns: repeat(4, 1fr);
-    gap: 40px 55px;
+    column-gap: 3px;
+    row-gap: 8px;
   }
 
   .services__application {
@@ -726,8 +828,8 @@
 
   .services__application-button {
     font-size: 15px;
-    padding: 18px 43px;
-    margin: 0 46px;
+    padding: 18px 42px;
+    margin: 0 auto;
   }
 
   .services__application-img {
@@ -754,6 +856,59 @@
   .services {
     padding-right: calc(50% - 490px);
     padding-left: calc(50% - 490px);
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 527px;
+      height: 110px;
+      top: 13px;
+      right: 0;
+      background-image: url("../../img/back-title-right-desc.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 355px;
+      height: 110px;
+      top: 13px;
+      left: 0;
+      background-image: url("../../img/back-title-left-desc.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .services__hosting {
+    padding-right: calc(50% - 490px);
+    padding-left: calc(50% - 490px);
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 974px;
+      height: 110px;
+      top: -18px;
+      right: 0;
+      background-image: url("../../img/back-title-right-host-desc.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 440px;
+      height: 110px;
+      top: -25px;
+      left: -80px;
+      background-image: url("../../img/back-title-left-host-desc.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 
   .services__offer {
@@ -780,6 +935,12 @@
 
   .services__offer-list {
     width: 390px;
+  }
+
+  .services__title {
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 60px;
   }
 
   .services__price-list {
@@ -831,8 +992,8 @@
   }
 
   .services__price-button {
-    margin: 0 372px;
-    padding: 18px 40px;
+    margin: 0 auto;
+    padding: 18px 34x;
   }
 
   .services__refuse-list {
@@ -887,8 +1048,8 @@
   }
 
   .services__security-button {
-    margin: 0 338px;
-    padding: 18px 34px;
+    margin: 0 auto;
+    padding: 18px 29px;
   }
 
   .services__connection {
@@ -951,8 +1112,17 @@
 
 @media (min-width: 1920px) {
   .services {
-    padding-right: calc(50% - 590px);
-    padding-left: calc(50% - 590px);
+    padding-right: calc(50% - 483px);
+    padding-left: calc(50% - 483px);
+  }
+
+  .services__hosting {
+    padding-right: calc(50% - 483px);
+    padding-left: calc(50% - 483px);
+  }
+
+  .services__hosting-title {
+    font-size: 36px;
   }
 
   .services__price-item {
@@ -986,6 +1156,70 @@
   .services__offer-accordion {
     &--copy {
       padding: 124px 720px 125px 87px;
+    }
+  }
+
+  .services__title {
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 60px;
+  }
+
+  .services__hosting-title {
+    margin-bottom: 90px;
+  }
+
+  .services__content {
+    display: block;
+    position: absolute;
+    width: 390px;
+    height: 582px;
+    padding: 46px 48px;
+    left: 29px;
+    top: 167px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 14px 14px #eef8fd;
+  }
+
+  .services__content-title {
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+
+  .services__content-list-subtitle {
+    color: #3a3f52;
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: -40px;
+    margin-bottom: 15px;
+  }
+
+  .services__content-list {
+    margin-bottom: 16px;
+
+    &--one {
+      padding: 0;
+    }
+  }
+
+  .services__content-item {
+    font-size: 12px;
+    line-height: 30px;
+    color: #3a3f52;
+
+    &--one {
+      font-size: 15px;
+      line-height: 20px;
+      @include list-reset;
+      margin-bottom: 11px;
+    }
+  }
+
+  .services__content-link {
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 3px;
     }
   }
 }

@@ -1,5 +1,5 @@
 .articles {
-  padding: 0 17px 100px 17px;
+  padding: 0 17px 40px 17px;
 
   &__buttons {
     display: flex;
@@ -149,7 +149,7 @@
 
 @media (min-width: 1920px) {
   .articles {
-    padding-right: calc(50% - 590px);
-    padding-left: calc(50% - 590px);
+    padding-right: calc(50% - 483px);
+    padding-left: calc(50% - 483px);
   }
 }
