@@ -1281,8 +1281,8 @@ a {
   .services__outsourcing-item--exclamation::before {
     content: "";
     position: absolute;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     top: 0;
     left: 0;
     background-image: url("../img/icons/svg/exclamation.svg");
@@ -1397,17 +1397,17 @@ a {
   background-color: #ade6ff;
   text-align: center; }
   .services__help-item--one {
-    width: 59%; }
+    width: 58%; }
   .services__help-item--two {
     width: 40%; }
   .services__help-item--three {
-    width: 45%; }
+    width: 44%; }
   .services__help-item--four {
     width: 54%; }
   .services__help-item--five {
-    width: 59%; }
+    width: 57%; }
   .services__help-item--six {
-    width: 40%; }
+    width: 42%; }
 
 .services__application {
   position: relative;
@@ -1428,7 +1428,8 @@ a {
 
 .services__application-button {
   margin: 0 auto;
-  padding: 14px 22px; }
+  padding: 14px 22px;
+  width: 188px; }
 
 .services__application-img {
   display: block;
@@ -1460,11 +1461,11 @@ a {
   background-color: #ade6ff;
   text-align: center; }
   .services__extra-item--one {
-    width: 59%; }
+    width: 58%; }
   .services__extra-item--two {
     width: 40%; }
   .services__extra-item--three {
-    width: 35%; }
+    width: 34%; }
   .services__extra-item--four {
     width: 34%; }
   .services__extra-item--five {
@@ -1626,8 +1627,8 @@ a {
       height: 21px;
       background-image: url("../img/icons/svg/mark-tablet.svg"); }
     .services__outsourcing-item--exclamation::before {
-      width: 29px;
-      height: 29px;
+      width: 31px;
+      height: 31px;
       background-image: url("../img/icons/svg/exclamation-tablet.svg"); }
     .services__outsourcing-item:not(:last-child) {
       margin-bottom: 22px; }
@@ -1827,6 +1828,10 @@ a {
   .services__help-item,
   .services__extra-item {
     padding: 18px 50px; }
+  .services__help-item--one {
+    width: 59%; }
+  .services__help-item--three {
+    width: 45%; }
   .services__refuse-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
