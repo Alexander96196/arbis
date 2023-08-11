@@ -1545,7 +1545,8 @@ a {
     padding: 62px 47px;
     background-image: url("../img/services-bg-tablet.png"); }
   .services__offer-title {
-    font-size: 21px; }
+    font-size: 21px;
+    width: 466px; }
   .services__offer-item {
     font-size: 16px;
     line-height: 21px; }
