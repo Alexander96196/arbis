@@ -613,11 +613,13 @@ a {
 
 @media (min-width: 1920px) {
   .header__wrapper {
-    padding-right: calc(50% - 590px);
-    padding-left: calc(50% - 590px); }
+    padding-right: calc(50% - 495px);
+    padding-left: calc(50% - 495px); }
   .header__box {
-    padding-right: calc(50% - 590px);
-    padding-left: calc(50% - 590px); } }
+    padding-right: calc(50% - 495px);
+    padding-left: calc(50% - 495px); }
+  .header__contact {
+    margin-right: 33px; } }
 
 .button {
   display: flex;
@@ -946,8 +948,8 @@ a {
 
 @media (min-width: 1920px) {
   .promo__wrapper {
-    padding-right: calc(50% - 590px);
-    padding-left: calc(50% - 590px); }
+    padding-right: calc(50% - 495px);
+    padding-left: calc(50% - 495px); }
   .promo__title {
     width: 670px;
     font-size: 65px; }
@@ -1833,11 +1835,11 @@ a {
 
 @media (min-width: 1920px) {
   .services {
-    padding-right: calc(50% - 483px);
-    padding-left: calc(50% - 483px); }
+    padding-right: calc(50% - 495px);
+    padding-left: calc(50% - 495px); }
   .services__hosting {
-    padding-right: calc(50% - 483px);
-    padding-left: calc(50% - 483px); }
+    padding-right: calc(50% - 495px);
+    padding-left: calc(50% - 495px); }
   .services__hosting-title {
     font-size: 36px; }
   .services__price-item::before {
@@ -2684,7 +2686,7 @@ td {
 
 @media (min-width: 1920px) {
   .footer {
-    padding-right: calc(50% - 483px);
-    padding-left: calc(50% - 483px); } }
+    padding-right: calc(50% - 495px);
+    padding-left: calc(50% - 495px); } }
 
 /*# sourceMappingURL=maps/main.css.map */
