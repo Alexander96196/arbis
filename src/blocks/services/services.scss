@@ -33,6 +33,7 @@
   border-radius: 4.5px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 0px -19px;
   padding: 32px 24px;
   margin-bottom: 30px;
   color: #fff;
@@ -42,7 +43,8 @@
 .services__offer-accordion {
   &--copy {
     height: 351px;
-    padding: 30px 11px;
+    padding: 30px 35px;
+    background-position: 0 -100px;
   }
 
   &::before {
@@ -59,12 +61,17 @@
 .services__offer-image {
   display: block;
   position: absolute;
-  right: 90px;
-  bottom: 30px;
+  right: 127px;
+  bottom: 18px;
 
   &--accordion {
-    left: 90px;
-    bottom: 40px;
+    left: 107px;
+    bottom: 28px;
+  }
+
+  &--laptop {
+    right: 82px;
+    bottom: 34px;
   }
 }
 
@@ -413,8 +420,8 @@
 }
 
 .services__help-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   column-gap: 3px;
   row-gap: 8px;
   @include list-reset;
@@ -425,10 +432,35 @@
   font-size: 8px;
   font-weight: 400;
   line-height: 20px;
-  padding: 10px;
+  padding: 2px 10px;
   border-radius: 5px;
+  color: #2e55a2;
   background-color: #ade6ff;
   text-align: center;
+
+  &--one {
+    width: 59%;
+  }
+
+  &--two {
+    width: 40%;
+  }
+
+  &--three {
+    width: 45%;
+  }
+
+  &--four {
+    width: 54%;
+  }
+
+  &--five {
+    width: 59%;
+  }
+
+  &--six {
+    width: 40%;
+  }
 }
 
 .services__application {
@@ -471,8 +503,8 @@
 
 .services__extra-list {
   @include list-reset;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   column-gap: 3px;
   row-gap: 8px;
 }
@@ -481,10 +513,51 @@
   font-size: 8px;
   font-weight: 400;
   line-height: 20px;
-  padding: 10px;
+  padding: 2px 10px;
   border-radius: 5px;
+  color: #2e55a2;
   background-color: #ade6ff;
   text-align: center;
+
+  &--one {
+    width: 59%;
+  }
+
+  &--two {
+    width: 40%;
+  }
+
+  &--three {
+    width: 35%;
+  }
+
+  &--four {
+    width: 34%;
+  }
+
+  &--five {
+    width: 29%;
+  }
+
+  &--six {
+    width: 32%;
+  }
+
+  &--seven {
+    width: 36%;
+  }
+
+  &--eight {
+    width: 30%;
+  }
+
+  &--nine {
+    width: 40%;
+  }
+
+  &--ten {
+    width: 40%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -649,6 +722,17 @@
     font-size: 15px;
   }
 
+  .services__help-item,
+  .services__extra-item {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 17px 32px;
+  }
+
+  .services__help-item {
+    padding: 17px 32px;
+  }
+
   .services__hosting-title {
     position: relative;
     margin-bottom: 90px;
@@ -797,10 +881,10 @@
   }
 
   .services__help-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 3px;
+    column-gap: 6px;
     row-gap: 8px;
+    padding-left: 21px;
+    padding-right: 21px;
   }
 
   .services__help-item,
@@ -812,8 +896,10 @@
 
   .services__extra-list {
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 3px;
+    column-gap: 6px;
     row-gap: 8px;
+    padding-left: 21px;
+    padding-right: 21px;
   }
 
   .services__application {
@@ -836,12 +922,18 @@
     filter: drop-shadow(0 1px 35px #87e7ea);
   }
 
+  .services__offer-accordion {
+    &--copy {
+      background-position: 0 -8px;
+    }
+  }
+
   .services__offer-image {
     right: 233px;
     bottom: 30px;
 
     &--accordion {
-      left: 228px;
+      left: 200px;
       bottom: 75px;
     }
 
@@ -863,7 +955,7 @@
       width: 527px;
       height: 110px;
       top: 13px;
-      right: 0;
+      right: -73px;
       background-image: url("../../img/back-title-right-desc.png");
       background-size: contain;
       background-repeat: no-repeat;
@@ -875,7 +967,7 @@
       width: 355px;
       height: 110px;
       top: 13px;
-      left: 0;
+      left: -252px;
       background-image: url("../../img/back-title-left-desc.png");
       background-size: contain;
       background-repeat: no-repeat;
@@ -892,7 +984,7 @@
       width: 974px;
       height: 110px;
       top: -18px;
-      right: 0;
+      right: -69px;
       background-image: url("../../img/back-title-right-host-desc.png");
       background-size: contain;
       background-repeat: no-repeat;
@@ -903,8 +995,8 @@
       position: absolute;
       width: 440px;
       height: 110px;
-      top: -25px;
-      left: -80px;
+      top: -18px;
+      left: -321px;
       background-image: url("../../img/back-title-left-host-desc.png");
       background-size: contain;
       background-repeat: no-repeat;
@@ -924,12 +1016,12 @@
     bottom: 75px;
 
     &--accordion {
-      left: 753px;
+      left: 590px;
       bottom: 70px;
     }
 
     &--laptop {
-      left: 680px;
+      left: 505px;
     }
   }
 
@@ -994,6 +1086,17 @@
   .services__price-button {
     margin: 0 auto;
     padding: 18px 34x;
+  }
+
+  .services__help-list,
+  .services__extra-list {
+    padding: 0;
+    column-gap: 9px;
+  }
+
+  .services__help-item,
+  .services__extra-item {
+    padding: 18px 50px;
   }
 
   .services__refuse-list {
@@ -1110,15 +1213,45 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .services {
+    &::before {
+      right: 0;
+    }
+
+    &::after {
+      left: -252px;
+    }
+  }
+
+  .services__hosting {
+    &::before {
+      right: 0;
+    }
+
+    &::after {
+      left: -252px;
+    }
+  }
+}
+
 @media (min-width: 1920px) {
   .services {
     padding-right: calc(50% - 495px);
     padding-left: calc(50% - 495px);
+
+    &::after {
+      left: 0;
+    }
   }
 
   .services__hosting {
     padding-right: calc(50% - 495px);
     padding-left: calc(50% - 495px);
+
+    &::after {
+      left: 0;
+    }
   }
 
   .services__hosting-title {
@@ -1127,7 +1260,7 @@
 
   .services__price-item {
     &::before {
-      left: 160px;
+      left: 128px;
     }
 
     &--audit {
@@ -1155,7 +1288,7 @@
 
   .services__offer-accordion {
     &--copy {
-      padding: 124px 720px 125px 87px;
+      padding: 124px 535px 125px 87px;
     }
   }
 
