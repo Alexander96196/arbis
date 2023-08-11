@@ -298,8 +298,8 @@
     &::before {
       content: "";
       position: absolute;
-      width: 16px;
-      height: 16px;
+      width: 18px;
+      height: 18px;
       top: 0;
       left: 0;
       background-image: url("../img/icons/svg/exclamation.svg");
@@ -439,7 +439,7 @@
   text-align: center;
 
   &--one {
-    width: 59%;
+    width: 58%;
   }
 
   &--two {
@@ -447,7 +447,7 @@
   }
 
   &--three {
-    width: 45%;
+    width: 44%;
   }
 
   &--four {
@@ -455,11 +455,11 @@
   }
 
   &--five {
-    width: 59%;
+    width: 57%;
   }
 
   &--six {
-    width: 40%;
+    width: 42%;
   }
 }
 
@@ -485,6 +485,7 @@
 .services__application-button {
   margin: 0 auto;
   padding: 14px 22px;
+  width: 188px;
 }
 
 .services__application-img {
@@ -520,7 +521,7 @@
   text-align: center;
 
   &--one {
-    width: 59%;
+    width: 58%;
   }
 
   &--two {
@@ -528,7 +529,7 @@
   }
 
   &--three {
-    width: 35%;
+    width: 34%;
   }
 
   &--four {
@@ -784,8 +785,8 @@
 
     &--exclamation {
       &::before {
-        width: 29px;
-        height: 29px;
+        width: 31px;
+        height: 31px;
         background-image: url("../../img/icons/svg/exclamation-tablet.svg");
       }
     }
@@ -1098,6 +1099,16 @@
   .services__help-item,
   .services__extra-item {
     padding: 18px 50px;
+  }
+
+  .services__help-item {
+    &--one {
+      width: 59%;
+    }
+
+    &--three {
+      width: 45%;
+    }
   }
 
   .services__refuse-list {
