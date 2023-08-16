@@ -33,7 +33,7 @@
   border-radius: 4.5px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0px -19px;
+  background-position: 50% 50%;
   padding: 32px 24px;
   margin-bottom: 30px;
   color: #fff;
@@ -44,7 +44,7 @@
   &--copy {
     height: 351px;
     padding: 30px 35px;
-    background-position: 0 -33px;
+    background-position: 50% 75%;
   }
 
   &::before {
@@ -70,7 +70,7 @@
   }
 
   &--laptop {
-    right: 18%;
+    left: 18%;
     bottom: 34px;
   }
 }
@@ -685,7 +685,7 @@
         width: 47px;
         height: 47px;
         top: 42px;
-        left: 84px;
+        left: 43%;
         background-image: url("../img/icons/svg/audit-tablet.svg");
       }
     }
@@ -695,7 +695,7 @@
         width: 47px;
         height: 47px;
         top: 42px;
-        left: 76px;
+        left: 43%;
         background-image: url("../img/icons/svg/monitoring-tablet.svg");
       }
     }
@@ -705,7 +705,7 @@
         width: 47px;
         height: 47px;
         top: 42px;
-        left: 76px;
+        left: 43%;
         background-image: url("../img/icons/svg/fix-tablet.svg");
       }
     }
@@ -924,23 +924,16 @@
     filter: drop-shadow(0 1px 35px #87e7ea);
   }
 
-  .services__offer-accordion {
-    &--copy {
-      background-position: 0 -8px;
-    }
-  }
-
   .services__offer-image {
-    right: 233px;
+    left: 33%;
     bottom: 30px;
 
     &--accordion {
-      left: 200px;
       bottom: 75px;
     }
 
     &--laptop {
-      left: 155px;
+      left: 30%;
       bottom: 107px;
     }
   }
@@ -1014,7 +1007,7 @@
   .services__offer-image {
     display: block;
     position: absolute;
-    right: 140px;
+    left: 63%;
     bottom: 75px;
 
     &--accordion {
@@ -1024,6 +1017,12 @@
 
     &--laptop {
       left: 505px;
+    }
+  }
+
+  .services__offer-accordion {
+    &--copy {
+      padding: 124px 535px 125px 87px;
     }
   }
 
@@ -1050,7 +1049,7 @@
         width: 70px;
         height: 69px;
         top: 42px;
-        left: 122px;
+        left: 40%;
         background-image: url("../../img/icons/svg/audit-desc.svg");
       }
     }
@@ -1060,7 +1059,7 @@
         width: 70px;
         height: 69px;
         top: 42px;
-        left: 122px;
+        left: 40%;
         background-image: url("../../img/icons/svg/monitoring-desc.svg");
       }
     }
@@ -1070,7 +1069,7 @@
         width: 70px;
         height: 69px;
         top: 42px;
-        left: 122px;
+        left: 40%;
         background-image: url("../../img/icons/svg/fix-desc.svg");
       }
     }
@@ -1271,10 +1270,6 @@
   }
 
   .services__price-item {
-    &::before {
-      left: 128px;
-    }
-
     &--audit {
       padding: 144px 90px 35px 90px;
     }
