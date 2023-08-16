@@ -1074,7 +1074,7 @@ a {
   border-radius: 4.5px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0px -19px;
+  background-position: 50% 50%;
   padding: 32px 24px;
   margin-bottom: 30px;
   color: #fff;
@@ -1083,7 +1083,7 @@ a {
 .services__offer-accordion--copy {
   height: 351px;
   padding: 30px 35px;
-  background-position: 0 -33px; }
+  background-position: 50% 75%; }
 
 .services__offer-accordion::before {
   right: 173px;
@@ -1102,7 +1102,7 @@ a {
     left: 30%;
     bottom: 55px; }
   .services__offer-image--laptop {
-    right: 18%;
+    left: 18%;
     bottom: 34px; }
 
 .services__offer-title {
@@ -1567,19 +1567,19 @@ a {
       width: 47px;
       height: 47px;
       top: 42px;
-      left: 84px;
+      left: 43%;
       background-image: url("../img/icons/svg/audit-tablet.svg"); }
     .services__price-item--monitoring::before {
       width: 47px;
       height: 47px;
       top: 42px;
-      left: 76px;
+      left: 43%;
       background-image: url("../img/icons/svg/monitoring-tablet.svg"); }
     .services__price-item--fix::before {
       width: 47px;
       height: 47px;
       top: 42px;
-      left: 76px;
+      left: 43%;
       background-image: url("../img/icons/svg/fix-tablet.svg"); }
   .services__price-desc {
     font-size: 10px;
@@ -1710,16 +1710,13 @@ a {
     margin: 0 auto; }
   .services__application-img {
     filter: drop-shadow(0 1px 35px #87e7ea); }
-  .services__offer-accordion--copy {
-    background-position: 0 -8px; }
   .services__offer-image {
-    right: 233px;
+    left: 33%;
     bottom: 30px; }
     .services__offer-image--accordion {
-      left: 200px;
       bottom: 75px; }
     .services__offer-image--laptop {
-      left: 155px;
+      left: 30%;
       bottom: 107px; } }
 
 @media (min-width: 1200px) {
@@ -1776,13 +1773,15 @@ a {
   .services__offer-image {
     display: block;
     position: absolute;
-    right: 140px;
+    left: 63%;
     bottom: 75px; }
     .services__offer-image--accordion {
       left: 590px;
       bottom: 70px; }
     .services__offer-image--laptop {
       left: 505px; }
+  .services__offer-accordion--copy {
+    padding: 124px 535px 125px 87px; }
   .services__offer-list {
     width: 390px; }
   .services__title {
@@ -1798,19 +1797,19 @@ a {
       width: 70px;
       height: 69px;
       top: 42px;
-      left: 122px;
+      left: 40%;
       background-image: url("../img/icons/svg/audit-desc.svg"); }
     .services__price-item--monitoring::before {
       width: 70px;
       height: 69px;
       top: 42px;
-      left: 122px;
+      left: 40%;
       background-image: url("../img/icons/svg/monitoring-desc.svg"); }
     .services__price-item--fix::before {
       width: 70px;
       height: 69px;
       top: 42px;
-      left: 122px;
+      left: 40%;
       background-image: url("../img/icons/svg/fix-desc.svg"); }
   .services__price-desc {
     font-size: 12px;
@@ -1921,8 +1920,6 @@ a {
       left: 0; }
   .services__hosting-title {
     font-size: 36px; }
-  .services__price-item::before {
-    left: 128px; }
   .services__price-item--audit {
     padding: 144px 90px 35px 90px; }
   .services__price-item--monitoring {
@@ -2099,13 +2096,13 @@ a {
       .accordion__content-item--connection::before {
         left: 39px; }
     .accordion__content-item--setting::before {
-      left: 79px;
+      left: 43%;
       top: 33px; }
     .accordion__content-item--install::before {
-      left: 79px;
+      left: 43%;
       top: 33px; }
     .accordion__content-item--debug::before {
-      left: 79px;
+      left: 43%;
       top: 33px; } }
 
 @media (min-width: 1200px) {
