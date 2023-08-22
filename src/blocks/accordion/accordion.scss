@@ -148,8 +148,8 @@
 
   .accordion__content-item {
     padding: 99px 26px 78px 26px;
-    font-size: 10px;
-    line-height: 15px;
+    font-size: 14px;
+    line-height: 20px;
     text-align: center;
 
     &--connection {
@@ -190,9 +190,6 @@
   }
 
   .accordion__content-item {
-    font-size: 14px;
-    line-height: 20px;
-
     &--setting {
       padding: 152px 50px 51px 50px;
       height: inherit;
