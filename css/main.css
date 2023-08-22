@@ -1944,6 +1944,7 @@ a {
     width: 390px;
     height: 582px;
     padding: 46px 48px;
+    margin-left: calc(50% - 960px);
     left: 29px;
     top: 167px;
     border-radius: 10px;
@@ -2087,8 +2088,8 @@ a {
       grid-template-columns: inherit; }
   .accordion__content-item {
     padding: 99px 26px 78px 26px;
-    font-size: 10px;
-    line-height: 15px;
+    font-size: 14px;
+    line-height: 20px;
     text-align: center; }
     .accordion__content-item--connection {
       padding: 40px 26px 40px 135px;
@@ -2109,33 +2110,30 @@ a {
   .accordion__item {
     font-size: 12px;
     line-height: 18px; }
-  .accordion__content-item {
-    font-size: 14px;
-    line-height: 20px; }
-    .accordion__content-item--setting {
-      padding: 152px 50px 51px 50px;
-      height: inherit; }
-      .accordion__content-item--setting::before {
-        width: 60px;
-        height: 58px;
-        left: 123px;
-        background-image: url("../img/icons/svg/setting-desc.svg"); }
-    .accordion__content-item--install {
-      padding: 152px 68px 51px 68px;
-      height: inherit; }
-      .accordion__content-item--install::before {
-        width: 59px;
-        height: 59px;
-        left: 123px;
-        background-image: url("../img/icons/svg/install-desc.svg"); }
-    .accordion__content-item--debug {
-      padding: 152px 60px 51px 60px;
-      height: inherit; }
-      .accordion__content-item--debug::before {
-        width: 60px;
-        height: 60px;
-        left: 123px;
-        background-image: url("../img/icons/svg/debug-desc.svg"); } }
+  .accordion__content-item--setting {
+    padding: 152px 50px 51px 50px;
+    height: inherit; }
+    .accordion__content-item--setting::before {
+      width: 60px;
+      height: 58px;
+      left: 123px;
+      background-image: url("../img/icons/svg/setting-desc.svg"); }
+  .accordion__content-item--install {
+    padding: 152px 68px 51px 68px;
+    height: inherit; }
+    .accordion__content-item--install::before {
+      width: 59px;
+      height: 59px;
+      left: 123px;
+      background-image: url("../img/icons/svg/install-desc.svg"); }
+  .accordion__content-item--debug {
+    padding: 152px 60px 51px 60px;
+    height: inherit; }
+    .accordion__content-item--debug::before {
+      width: 60px;
+      height: 60px;
+      left: 123px;
+      background-image: url("../img/icons/svg/debug-desc.svg"); } }
 
 table {
   width: 100%; }
